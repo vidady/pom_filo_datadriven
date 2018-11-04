@@ -1,0 +1,97 @@
+2018-11-03 21:57:14,479 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 21:57:14,503 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 21:57:28,456 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 21:57:28,480 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 21:58:27,742 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 21:58:27,781 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 21:58:41,874 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 21:58:41,907 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:02:03,204 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:02:03,246 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:07:42,750 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:07:42,793 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:16:54,233 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:16:54,264 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:17:08,502 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:17:08,526 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:17:08,890 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-03 22:17:15,733 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-03 22:17:16,588 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[FirefoxDriver: firefox on MAC (64a9ff29-9de4-3b45-bc06-57c41c2ed8ce)] -> tag name: a]
+2018-11-03 22:17:17,137 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[FirefoxDriver: firefox on MAC (64a9ff29-9de4-3b45-bc06-57c41c2ed8ce)] -> tag name: a]
+2018-11-03 22:19:07,627 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:19:07,657 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:21:29,819 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:21:29,902 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:21:44,024 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:21:44,049 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:21:44,245 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-03 22:21:50,401 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-03 22:21:50,765 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[FirefoxDriver: firefox on MAC (b8f0933f-e5f5-444b-944b-f38abd54c8e7)] -> tag name: a]
+2018-11-03 22:21:50,837 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[FirefoxDriver: firefox on MAC (b8f0933f-e5f5-444b-944b-f38abd54c8e7)] -> tag name: a]
+2018-11-03 22:24:46,056 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:24:46,086 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:25:00,140 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:25:00,215 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:25:00,463 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-03 22:25:08,424 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-03 22:25:09,312 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[FirefoxDriver: firefox on MAC (c1a087b1-b7dc-e34d-b492-74f28da28edf)] -> tag name: a]
+2018-11-03 22:25:09,843 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[FirefoxDriver: firefox on MAC (c1a087b1-b7dc-e34d-b492-74f28da28edf)] -> tag name: a]
+2018-11-03 22:25:53,395 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:25:53,431 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:26:07,452 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:26:07,478 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:26:07,844 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-03 22:26:15,131 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-03 22:26:16,113 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[FirefoxDriver: firefox on MAC (ba728e18-0beb-0f42-94e8-bcc99655569a)] -> tag name: a]
+2018-11-03 22:26:16,650 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[FirefoxDriver: firefox on MAC (ba728e18-0beb-0f42-94e8-bcc99655569a)] -> tag name: a]
+2018-11-03 22:49:39,980 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:49:40,014 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:49:54,437 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:49:54,465 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:55:07,918 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:55:07,947 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:55:22,506 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:55:22,539 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:56:35,267 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:56:35,307 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:59:07,643 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:59:07,689 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:59:26,515 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 22:59:26,563 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 22:59:27,171 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-03 22:59:34,755 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-03 22:59:36,331 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[FirefoxDriver: firefox on MAC (863adf92-ad21-7c46-a0a0-e0cb856cb945)] -> tag name: a]
+2018-11-03 22:59:36,878 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[FirefoxDriver: firefox on MAC (863adf92-ad21-7c46-a0a0-e0cb856cb945)] -> tag name: a]
+2018-11-03 23:07:53,127 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 23:07:53,163 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 23:08:14,022 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 23:08:14,074 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 23:08:14,609 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-03 23:08:22,404 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-03 23:08:23,894 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[FirefoxDriver: firefox on MAC (622ec118-5c94-d84d-8666-9809523d57dc)] -> tag name: a]
+2018-11-03 23:08:24,492 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[FirefoxDriver: firefox on MAC (622ec118-5c94-d84d-8666-9809523d57dc)] -> tag name: a]
+2018-11-03 23:31:52,284 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 23:31:52,350 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 23:31:53,015 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-03 23:31:59,566 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-03 23:32:01,200 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[FirefoxDriver: firefox on MAC (e831fe56-062a-2d4e-a2d1-c9c2008ccca6)] -> tag name: a]
+2018-11-03 23:32:01,826 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[FirefoxDriver: firefox on MAC (e831fe56-062a-2d4e-a2d1-c9c2008ccca6)] -> tag name: a]
+2018-11-03 23:32:19,430 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 23:32:19,481 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 23:36:28,396 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-03 23:36:28,429 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-03 23:36:28,790 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-04 00:01:21,946 [main] INFO MyFirstTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-04 00:01:21,976 [main] INFO MyFirstTest - Navigated to:'https://www.ashurst.com/'
+2018-11-04 00:01:37,184 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-04 00:01:37,278 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-04 00:01:37,602 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-04 00:01:45,430 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-04 00:01:46,293 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[FirefoxDriver: firefox on MAC (73ac8da3-ca16-8c45-bb3b-4d2997c78aa3)] -> tag name: a]
+2018-11-04 00:01:46,848 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[FirefoxDriver: firefox on MAC (73ac8da3-ca16-8c45-bb3b-4d2997c78aa3)] -> tag name: a]
+2018-11-04 00:14:37,472 [main] INFO LoginPageTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-04 00:14:37,505 [main] INFO LoginPageTest - Navigated to:'https://www.ashurst.com/'
+2018-11-04 00:14:37,935 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-04 00:14:44,079 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-04 00:14:45,144 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[FirefoxDriver: firefox on MAC (d9ad758e-eba9-5249-8609-f2257c4a20ee)] -> tag name: a]
+2018-11-04 00:14:45,697 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[FirefoxDriver: firefox on MAC (d9ad758e-eba9-5249-8609-f2257c4a20ee)] -> tag name: a]
