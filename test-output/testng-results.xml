@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-03T18:41:07Z" name="Default suite" finished-at="2018-11-03T18:41:07Z" duration-ms="8">
+  <suite started-at="2018-11-05T22:12:27Z" name="Default suite" finished-at="2018-11-05T22:12:28Z" duration-ms="67">
     <groups>
     </groups>
-    <test started-at="2018-11-03T18:41:07Z" name="Default test" finished-at="2018-11-03T18:41:07Z" duration-ms="8">
+    <test started-at="2018-11-05T22:12:27Z" name="Default test" finished-at="2018-11-05T22:12:28Z" duration-ms="67">
+      <class name="com.qa.util.jsonReader">
+        <test-method signature="testing(java.util.Hashtable)[pri:0, instance:com.qa.util.jsonReader@6404f418]" started-at="2018-11-05T22:12:28Z" name="testing" data-provider="searchJsonElement" finished-at="2018-11-05T22:12:28Z" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Amount=25.00, AccountNumber=3698785526, TestCase=testing, Type=SavingsAcc, DateOfPayment=05 05 2018}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing -->
+        <test-method signature="testing(java.util.Hashtable)[pri:0, instance:com.qa.util.jsonReader@6404f418]" started-at="2018-11-05T22:12:28Z" name="testing" data-provider="searchJsonElement" finished-at="2018-11-05T22:12:28Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Amount=36.00, AccountNumber=588785526, TestCase=testing, Type=CheckingAcc, DateOfPayment=11 05 2018}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing -->
+      </class> <!-- com.qa.util.jsonReader -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.util.runner">
+      <class name="com.qa.util.jsonReader">
         <methods>
-          <include name="test_runner"/>
+          <include name="testing"/>
         </methods>
-      </class> <!-- com.qa.util.runner -->
+      </class> <!-- com.qa.util.jsonReader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

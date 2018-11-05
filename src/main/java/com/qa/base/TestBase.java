@@ -50,7 +50,7 @@ public class TestBase {
 	public static Logger logger;
 	public static String className;
 	public static SoftAssert softAssert;
-
+	
 	public TestBase() {
 
 		try {
@@ -161,6 +161,8 @@ public class TestBase {
 		readNwrite.runmodeCheck(data);
 
 	}
+	
+	
 
 	@BeforeMethod
 	public void setUp(Method m) {
