@@ -107,3 +107,40 @@
 2018-11-04 10:35:54,572 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
 2018-11-04 10:35:54,909 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[FirefoxDriver: firefox on MAC (97016f77-8a7a-6d4d-aa88-e7d4a3df842f)] -> tag name: a]
 2018-11-04 10:35:55,002 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[FirefoxDriver: firefox on MAC (97016f77-8a7a-6d4d-aa88-e7d4a3df842f)] -> tag name: a]
+2018-11-06 04:29:45,315 - LoginPageTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-06 04:29:45,345 - LoginPageTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-06 04:29:46,757 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-06 04:30:09,252 - LoginPageTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-06 04:30:09,285 - LoginPageTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-06 04:30:10,531 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-06 04:30:18,598 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-06 04:30:19,226 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[FirefoxDriver: firefox on MAC (00e3d729-f424-f642-9e72-951016690a9d)] -> tag name: a]
+2018-11-06 04:30:19,757 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[FirefoxDriver: firefox on MAC (00e3d729-f424-f642-9e72-951016690a9d)] -> tag name: a]
+2018-11-06 04:31:25,227 - LoginPageTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-06 04:31:25,257 - LoginPageTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-06 04:31:25,643 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-06 04:31:32,757 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-06 04:31:33,605 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[FirefoxDriver: firefox on MAC (3cd7897a-e663-a540-99be-ed1326d8b5f5)] -> tag name: a]
+2018-11-06 04:31:34,139 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[FirefoxDriver: firefox on MAC (3cd7897a-e663-a540-99be-ed1326d8b5f5)] -> tag name: a]
+2018-11-06 04:31:47,362 - MyFirstTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-06 04:31:47,393 - MyFirstTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-06 04:33:40,073 - LoginPageTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-06 04:33:40,101 - LoginPageTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-06 04:33:40,362 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-06 04:33:48,213 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-06 04:33:49,012 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[FirefoxDriver: firefox on MAC (ea5c0b87-0d8e-8649-be71-8ad9e568c501)] -> tag name: a]
+2018-11-06 04:33:49,542 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[FirefoxDriver: firefox on MAC (ea5c0b87-0d8e-8649-be71-8ad9e568c501)] -> tag name: a]
+2018-11-06 04:34:02,803 - MyFirstTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-06 04:34:02,828 - MyFirstTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-06 04:34:03,000 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-06 04:34:08,658 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-06 04:34:08,660 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[FirefoxDriver: firefox on MAC (9859950a-08c2-c247-a7ec-df05ab8860c5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-06 04:34:08,743 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[FirefoxDriver: firefox on MAC (9859950a-08c2-c247-a7ec-df05ab8860c5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-06 04:34:08,820 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-06 04:34:08,896 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-06 04:34:08,897 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[FirefoxDriver: firefox on MAC (9859950a-08c2-c247-a7ec-df05ab8860c5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-06 04:34:09,659 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[FirefoxDriver: firefox on MAC (9859950a-08c2-c247-a7ec-df05ab8860c5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-06 04:34:10,011 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-06 04:34:10,033 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-06 04:34:10,034 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[FirefoxDriver: firefox on MAC (9859950a-08c2-c247-a7ec-df05ab8860c5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-06 04:34:10,570 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[FirefoxDriver: firefox on MAC (9859950a-08c2-c247-a7ec-df05ab8860c5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]

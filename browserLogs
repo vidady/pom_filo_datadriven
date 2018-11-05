@@ -1,187 +1,159 @@
-1541307943145	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/dk/j9gwnnyd1mzb5z4_ykv6qz2m0000gn/T/rust_mozprofile.9DV7542l6UMU"
-1541307943338	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider", "XPIInternal"]
-1541307943341	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
-1541307943361	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/GMPProvider.jsm
-1541307943364	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/PluginProvider.jsm
-1541307943364	addons.manager	DEBUG	Starting provider: XPIProvider
-1541307943365	addons.xpi	DEBUG	startup
-1541307943368	addons.xpi	INFO	SystemAddonLocation directory is missing
-1541307943368	addons.xpi	DEBUG	checkForChanges
-1541307943369	addons.xpi	DEBUG	Loaded add-on state: {"app-system-defaults":{"addons":{"aushelper@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018590,"path":"aushelper@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"aushelper%40mozilla.org:2.0","version":"2.0"},"firefox@getpocket.com":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018588,"path":"firefox@getpocket.com.xpi","runInSafeMode":true,"telemetryKey":"firefox%40getpocket.com:1.0.5","version":"1.0.5"},"formautofill@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018578,"path":"formautofill@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"formautofill%40mozilla.org:1.0","version":"1.0","type":"webextension"},"onboarding@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018570,"path":"onboarding@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"onboarding%40mozilla.org:1.0","version":"1.0"},"screenshots@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018560,"path":"screenshots@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"screenshots%40mozilla.org:33.0.0","version":"33.0.0","startupData":{"persistentListeners":{"runtime":{"onMessage":[[]]}}}},"webcompat-reporter@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018544,"path":"webcompat-reporter@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"webcompat-reporter%40mozilla.org:1.0.0","version":"1.0.0"},"webcompat@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":true,"lastModifiedTime":1541002018543,"path":"webcompat@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"webcompat%40mozilla.org:2.0.1","version":"2.0.1"}},"staged":{},"path":"/Applications/Firefox.app/Contents/Resources/browser/features"}}
-1541307943372	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
-1541307943373	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1541307943374	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1541307943375	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1541307943375	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1541307943375	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
-1541307943375	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1541307943376	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
-1541307943376	addons.xpi	DEBUG	No changes found
-1541307943384	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/aushelper@mozilla.org.xpi
-1541307943384	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/aushelper@mozilla.org.xpi
-1541307943386	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
-1541307943386	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/firefox@getpocket.com.xpi
-1541307943386	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/firefox@getpocket.com.xpi
-1541307943390	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
-1541307943395	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/formautofill@mozilla.org.xpi
-1541307943414	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
-1541307943416	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/onboarding@mozilla.org.xpi
-1541307943416	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/onboarding@mozilla.org.xpi
-1541307943418	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
-1541307943418	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/screenshots@mozilla.org.xpi
-1541307943418	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/screenshots@mozilla.org.xpi
-1541307943420	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
-1541307943420	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/webcompat-reporter@mozilla.org.xpi
-1541307943420	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/webcompat-reporter@mozilla.org.xpi
-1541307943421	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
-1541307943422	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/webcompat@mozilla.org.xpi
-1541307943422	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/webcompat@mozilla.org.xpi
-1541307943424	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0.1
-1541307943425	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
-1541307943426	addons.manager	DEBUG	Provider finished startup: XPIProvider
-1541307943426	addons.manager	DEBUG	Starting provider: LightweightThemeManager
-1541307943426	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
-1541307943426	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
-1541307943426	addons.manager	DEBUG	Starting provider: GMPProvider
-1541307943428	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
-1541307943429	addons.manager	DEBUG	Provider finished startup: GMPProvider
-1541307943429	addons.manager	DEBUG	Starting provider: PluginProvider
-1541307943429	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
-1541307943429	addons.manager	DEBUG	Provider finished startup: PluginProvider
-1541307943434	addons.manager	DEBUG	Completed startup sequence
-1541307943444	Marionette	DEBUG	Received observer notification profile-after-change
-1541307943572	Marionette	DEBUG	Received observer notification command-line-startup
-1541307943573	Marionette	DEBUG	Received observer notification nsPref:changed
-1541307943573	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
-1541307943642	Marionette	DEBUG	Received observer notification toplevel-window-ready
-1541307944424	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
-1541307944424	Marionette	DEBUG	Waiting for delayed startup...
-1541307944429	addons.xpi-utils	DEBUG	Starting async load of XPI database /var/folders/dk/j9gwnnyd1mzb5z4_ykv6qz2m0000gn/T/rust_mozprofile.9DV7542l6UMU/extensions.json
-1541307944449	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
-1541307944449	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
-1541307944449	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
-1541307944450	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
-1541307944450	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
-1541307944450	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
-1541307944450	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
-1541307944450	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
-1541307944598	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
-1541307944785	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
-1541307944785	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
-1541307944786	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
-1541307944786	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
-1541307944786	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
-1541307944787	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
-1541307944787	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
-1541307944787	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
-1541307944787	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
-1541307944788	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
-1541307944788	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
-1541307944788	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
-1541307944788	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
-1541307944789	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
-1541307944789	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
-1541307944789	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
-1541307944789	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
-1541307944838	Marionette	INFO	Listening on port 49680
-1541307944838	Marionette	DEBUG	Remote service is active
-1541307944896	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:49700
-1541307944898	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"none"}]
-1541307944899	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541459040420	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/dk/j9gwnnyd1mzb5z4_ykv6qz2m0000gn/T/rust_mozprofile.f0RuX6zEhrmK"
+1541459040620	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider", "XPIInternal"]
+1541459040624	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1541459040639	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/GMPProvider.jsm
+1541459040642	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/PluginProvider.jsm
+1541459040642	addons.manager	DEBUG	Starting provider: XPIProvider
+1541459040642	addons.xpi	DEBUG	startup
+1541459040645	addons.xpi	INFO	SystemAddonLocation directory is missing
+1541459040645	addons.xpi	DEBUG	checkForChanges
+1541459040645	addons.xpi	DEBUG	Loaded add-on state: {"app-system-defaults":{"addons":{"aushelper@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018590,"path":"aushelper@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"aushelper%40mozilla.org:2.0","version":"2.0"},"firefox@getpocket.com":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018588,"path":"firefox@getpocket.com.xpi","runInSafeMode":true,"telemetryKey":"firefox%40getpocket.com:1.0.5","version":"1.0.5"},"formautofill@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018578,"path":"formautofill@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"formautofill%40mozilla.org:1.0","version":"1.0","type":"webextension"},"onboarding@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018570,"path":"onboarding@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"onboarding%40mozilla.org:1.0","version":"1.0"},"screenshots@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018560,"path":"screenshots@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"screenshots%40mozilla.org:33.0.0","version":"33.0.0","startupData":{"persistentListeners":{"runtime":{"onMessage":[[]]}}}},"webcompat-reporter@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1541002018544,"path":"webcompat-reporter@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"webcompat-reporter%40mozilla.org:1.0.0","version":"1.0.0"},"webcompat@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":true,"lastModifiedTime":1541002018543,"path":"webcompat@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"webcompat%40mozilla.org:2.0.1","version":"2.0.1"}},"staged":{},"path":"/Applications/Firefox.app/Contents/Resources/browser/features"}}
+1541459040647	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1541459040648	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1541459040648	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1541459040649	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1541459040649	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1541459040649	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1541459040650	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1541459040650	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+1541459040650	addons.xpi	DEBUG	No changes found
+1541459040658	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/aushelper@mozilla.org.xpi
+1541459040658	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/aushelper@mozilla.org.xpi
+1541459040660	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1541459040660	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/firefox@getpocket.com.xpi
+1541459040660	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/firefox@getpocket.com.xpi
+1541459040663	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1541459040669	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/formautofill@mozilla.org.xpi
+1541459040688	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1541459040690	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/onboarding@mozilla.org.xpi
+1541459040690	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/onboarding@mozilla.org.xpi
+1541459040692	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1541459040692	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/screenshots@mozilla.org.xpi
+1541459040692	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/screenshots@mozilla.org.xpi
+1541459040694	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1541459040694	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/webcompat-reporter@mozilla.org.xpi
+1541459040694	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/webcompat-reporter@mozilla.org.xpi
+1541459040695	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1541459040696	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/webcompat@mozilla.org.xpi
+1541459040696	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/webcompat@mozilla.org.xpi
+1541459040698	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0.1
+1541459040699	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1541459040700	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1541459040700	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1541459040700	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1541459040700	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1541459040700	addons.manager	DEBUG	Starting provider: GMPProvider
+1541459040702	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1541459040702	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1541459040703	addons.manager	DEBUG	Starting provider: PluginProvider
+1541459040703	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1541459040703	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1541459040709	addons.manager	DEBUG	Completed startup sequence
+1541459040719	Marionette	DEBUG	Received observer notification profile-after-change
+1541459040852	Marionette	DEBUG	Received observer notification command-line-startup
+1541459040852	Marionette	DEBUG	Received observer notification nsPref:changed
+1541459040852	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1541459040922	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1541459041879	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1541459041879	Marionette	DEBUG	Waiting for delayed startup...
+1541459041885	addons.xpi-utils	DEBUG	Starting async load of XPI database /var/folders/dk/j9gwnnyd1mzb5z4_ykv6qz2m0000gn/T/rust_mozprofile.f0RuX6zEhrmK/extensions.json
+1541459041907	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1541459041907	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1541459041907	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1541459041907	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1541459041908	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1541459041908	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1541459041908	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1541459041908	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+1541459042068	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1541459042248	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1541459042248	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1541459042248	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1541459042249	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1541459042249	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1541459042250	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1541459042250	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1541459042250	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1541459042250	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1541459042250	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1541459042250	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1541459042250	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1541459042251	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1541459042251	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1541459042251	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1541459042251	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1541459042251	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1541459042303	Marionette	INFO	Listening on port 50572
+1541459042303	Marionette	DEBUG	Remote service is active
 *** Blocklist::_loadFileInternal: blocklist is disabled
-1541307944951	Marionette	DEBUG	[2147483649] Frame script loaded
-1541307944959	Marionette	DEBUG	[2147483649] Frame script registered
-1541307944966	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"97016f77-8a7a-6d4d-aa88-e7d4a3df842f","capabilities":{"browserName":"firefox","browserVersion":"63.0" ... b5z4_ykv6qz2m0000gn/T/rust_mozprofile.9DV7542l6UMU","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
-1541307945013	addons.xpi-utils	DEBUG	Successfully read XPI database
-1541307945028	Marionette	TRACE	0 -> [0,2,"WebDriver:MaximizeWindow",{}]
-1541307945296	Marionette	TRACE	0 <- [1,2,null,{"x":0,"y":23,"width":1440,"height":808,"state":"maximized"}]
-1541307945315	Marionette	TRACE	0 -> [0,3,"WebDriver:DeleteAllCookies",{}]
-1541307945316	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
-1541307945383	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
-1541307945387	Marionette	TRACE	0 -> [0,4,"WebDriver:SetTimeouts",{"pageLoad":60000}]
-1541307945388	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
-1541307945414	Marionette	TRACE	0 -> [0,5,"WebDriver:SetTimeouts",{"implicit":60000}]
-1541307945415	Marionette	TRACE	0 <- [1,5,null,{"value":null}]
-1541307945422	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"https://www.ashurst.com/"}]
-1541307945437	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
-1541307945654	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElements",{"using":"css selector","value":"a"}]
-1541307954492	Marionette	TRACE	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"760e772b-6f0d-d041-936a-56f08228cc01"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"37092211-02bd-4246-8682-7548f78d188c"},{"element-6066-11e4-a52e-4f735466cecf":"5228d50e-38a3-3148-9fd8-00cef658f23e"}]]
-1541307954606	Marionette	TRACE	0 -> [0,8,"WebDriver:GetElementText",{"id":"760e772b-6f0d-d041-936a-56f08228cc01"}]
-1541307954637	Marionette	TRACE	0 <- [1,8,null,{"value":""}]
-1541307954644	Marionette	TRACE	0 -> [0,9,"WebDriver:GetElementText",{"id":"760e772b-6f0d-d041-936a-56f08228cc01"}]
-1541307954669	Marionette	TRACE	0 <- [1,9,null,{"value":""}]
-1541307954675	Marionette	TRACE	0 -> [0,10,"WebDriver:GetElementText",{"id":"e8220d7d-8198-3544-a617-cf674da40f56"}]
-1541307954685	Marionette	TRACE	0 <- [1,10,null,{"value":""}]
-1541307954690	Marionette	TRACE	0 -> [0,11,"WebDriver:GetElementText",{"id":"e8220d7d-8198-3544-a617-cf674da40f56"}]
-1541307954703	Marionette	TRACE	0 <- [1,11,null,{"value":""}]
-1541307954708	Marionette	TRACE	0 -> [0,12,"WebDriver:GetElementText",{"id":"8b75611a-633c-2144-84f4-aab788abccdf"}]
-1541307954726	Marionette	TRACE	0 <- [1,12,null,{"value":"CAREERS"}]
-1541307954741	Marionette	TRACE	0 -> [0,13,"WebDriver:GetElementText",{"id":"8b75611a-633c-2144-84f4-aab788abccdf"}]
-1541307954756	Marionette	TRACE	0 <- [1,13,null,{"value":"CAREERS"}]
-1541307954774	Marionette	TRACE	0 -> [0,14,"WebDriver:GetElementText",{"id":"2725aa65-1578-4842-80ff-565cc5b9206f"}]
-1541307954790	Marionette	TRACE	0 <- [1,14,null,{"value":"LOGIN"}]
-1541307954795	Marionette	TRACE	0 -> [0,15,"WebDriver:GetElementText",{"id":"2725aa65-1578-4842-80ff-565cc5b9206f"}]
-1541307954825	Marionette	TRACE	0 <- [1,15,null,{"value":"LOGIN"}]
-1541307954830	Marionette	TRACE	0 -> [0,16,"WebDriver:GetElementText",{"id":"1495d4ef-d51c-6d42-b74b-f4ed708fe5f3"}]
-1541307954849	Marionette	TRACE	0 <- [1,16,null,{"value":""}]
-1541307954862	Marionette	TRACE	0 -> [0,17,"WebDriver:GetElementText",{"id":"1495d4ef-d51c-6d42-b74b-f4ed708fe5f3"}]
-1541307954871	Marionette	TRACE	0 <- [1,17,null,{"value":""}]
-1541307954879	Marionette	TRACE	0 -> [0,18,"WebDriver:GetElementText",{"id":"d2994d2b-201a-cf4e-87fe-fc05e7ee6c48"}]
-1541307954895	Marionette	TRACE	0 <- [1,18,null,{"value":"PEOPLE"}]
-1541307954901	Marionette	TRACE	0 -> [0,19,"WebDriver:GetElementText",{"id":"d2994d2b-201a-cf4e-87fe-fc05e7ee6c48"}]
-1541307954908	Marionette	TRACE	0 <- [1,19,null,{"value":"PEOPLE"}]
-1541307954914	Marionette	TRACE	0 -> [0,20,"WebDriver:ElementClick",{"id":"d2994d2b-201a-cf4e-87fe-fc05e7ee6c48"}]
-1541307954963	Marionette	TRACE	0 <- [1,20,null,{"value":null}]
-1541307955012	Marionette	TRACE	0 -> [0,21,"Marionette:Quit",{"flags":["eForceQuit"]}]
-1541307955013	Marionette	INFO	Stopped listening on port 49680
-1541307955054	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 2.0.1
-1541307955054	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat-reporter@mozilla.org version 1.0.0
-1541307955055	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 33.0.0
-1541307955062	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 1.0
-1541307955063	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
-1541307955071	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
-1541307955071	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
-1541307955121	Marionette	TRACE	0 <- [1,21,null,{"cause":"shutdown"}]
-1541307955186	Marionette	TRACE	0 -> [0,22,"Marionette:Quit",{"flags":["eForceQuit"]}]
-1541307955187	Marionette	TRACE	0 <- [1,22,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
-1541307955205	Marionette	DEBUG	Closed connection 0
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
+1541459042377	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:50594
+1541459042379	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"none"}]
+1541459042380	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541459042425	addons.xpi-utils	DEBUG	Successfully read XPI database
+1541459042430	Marionette	DEBUG	[2147483649] Frame script loaded
+1541459042436	Marionette	DEBUG	[2147483649] Frame script registered
+1541459042441	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"9859950a-08c2-c247-a7ec-df05ab8860c5","capabilities":{"browserName":"firefox","browserVersion":"63.0" ... b5z4_ykv6qz2m0000gn/T/rust_mozprofile.f0RuX6zEhrmK","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1541459042483	Marionette	TRACE	0 -> [0,2,"WebDriver:MaximizeWindow",{}]
+1541459042762	Marionette	TRACE	0 <- [1,2,null,{"x":0,"y":23,"width":1440,"height":811,"state":"maximized"}]
+1541459042774	Marionette	TRACE	0 -> [0,3,"WebDriver:DeleteAllCookies",{}]
+1541459042777	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
+1541459042788	Marionette	TRACE	0 -> [0,4,"WebDriver:SetTimeouts",{"pageLoad":60000}]
+1541459042789	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
+1541459042800	Marionette	TRACE	0 -> [0,5,"WebDriver:SetTimeouts",{"implicit":60000}]
+1541459042801	Marionette	TRACE	0 <- [1,5,null,{"value":null}]
+1541459042808	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"https://www.ashurst.com/"}]
+1541459042824	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
+1541459042826	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1541459043035	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElement",{"using":"xpath","value":"html/body/header/section[3]/div/nav[1]/ul/li[2]/a"}]
+1541459048653	Marionette	TRACE	0 <- [1,7,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"06bb8670-0638-7f47-bf5b-8a8aec901d85"}}]
+1541459048671	Marionette	TRACE	0 -> [0,8,"WebDriver:ElementClick",{"id":"06bb8670-0638-7f47-bf5b-8a8aec901d85"}]
+1541459048725	Marionette	TRACE	0 <- [1,8,null,{"value":null}]
+1541459048830	Marionette	TRACE	0 -> [0,9,"WebDriver:FindElement",{"using":"xpath","value":"html/body/header/section[3]/div/nav[1]/ul/li[2]/a"}]
+1541459048893	Marionette	TRACE	0 <- [1,9,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"06bb8670-0638-7f47-bf5b-8a8aec901d85"}}]
+1541459048904	Marionette	TRACE	0 -> [0,10,"WebDriver:ElementClick",{"id":"06bb8670-0638-7f47-bf5b-8a8aec901d85"}]
+1541459049655	Marionette	TRACE	0 <- [1,10,null,{"value":null}]
+1541459050020	Marionette	TRACE	0 -> [0,11,"WebDriver:FindElement",{"using":"xpath","value":"html/body/header/section[3]/div/nav[1]/ul/li[2]/a"}]
+1541459050029	Marionette	TRACE	0 <- [1,11,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"06bb8670-0638-7f47-bf5b-8a8aec901d85"}}]
+1541459050043	Marionette	TRACE	0 -> [0,12,"WebDriver:ElementClick",{"id":"06bb8670-0638-7f47-bf5b-8a8aec901d85"}]
+1541459050567	Marionette	TRACE	0 <- [1,12,null,{"value":null}]
+1541459050587	Marionette	TRACE	0 -> [0,13,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541459050588	Marionette	INFO	Stopped listening on port 50572
+1541459050651	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 2.0.1
+1541459050652	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat-reporter@mozilla.org version 1.0.0
+1541459050652	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 33.0.0
+1541459050659	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 1.0
+1541459050659	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1541459050667	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1541459050667	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1541459050716	Marionette	TRACE	0 <- [1,13,null,{"cause":"shutdown"}]
 JavaScript error: https://ashurstcdeassets.azureedge.net/js/main.min.js, line 4: NS_ERROR_NOT_INITIALIZED: 
-1541307955392	addons.manager	DEBUG	shutdown
-1541307955394	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
-1541307955394	addons.xpi	DEBUG	shutdown
-1541307955406	addons.xpi-utils	DEBUG	shutdown
-1541307955406	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
-1541307955406	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
-1541307955406	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
-1541307955410	addons.manager	DEBUG	Async provider shutdown done
-1541307955471	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
-1541307955471	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
-1541307955471	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
-1541307955472	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
-1541307955472	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
-1541307955472	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
-1541307955472	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
-1541307955472	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
-1541307955472	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
-1541307955473	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
-1541307955473	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
-1541307955473	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
-1541307955473	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
-1541307955473	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
-1541307955473	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
-1541307955473	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
-1541307955473	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
-1541307955473	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
-1541307955473	Marionette	DEBUG	Remote service is inactive
+1541459050802	Marionette	TRACE	0 -> [0,14,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541459050802	Marionette	TRACE	0 <- [1,14,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1541459050804	Marionette	DEBUG	Closed connection 0
+1541459050838	addons.manager	DEBUG	shutdown
+1541459050842	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1541459050842	addons.xpi	DEBUG	shutdown
+1541459050855	addons.xpi-utils	DEBUG	shutdown
+1541459050855	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1541459050855	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1541459050856	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1541459050862	addons.manager	DEBUG	Async provider shutdown done
+1541459050923	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
+1541459050924	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
+1541459050924	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1541459050924	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1541459050924	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1541459050924	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1541459050925	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1541459050925	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1541459050925	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1541459050925	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1541459050926	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1541459050926	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1541459050926	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1541459050926	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1541459050926	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1541459050926	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1541459050926	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1541459050926	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1541459050927	Marionette	DEBUG	Remote service is inactive
