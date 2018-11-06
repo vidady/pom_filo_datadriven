@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.util.jsonReader">
         <methods>
-          <include name="testing"/>
+          <include name="testing" invocation-numbers="2"/>
         </methods>
       </class> <!-- com.qa.util.jsonReader -->
     </classes>

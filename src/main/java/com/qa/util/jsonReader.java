@@ -18,21 +18,24 @@ import com.google.gson.JsonSyntaxException;
 
 public class jsonReader {
 
-
-	@Test(dataProvider="searchJsonElement")
-	public void testing(Hashtable<String,String>data) {
-
-		System.out.println(data.get("Amount"));
-	}
+@Test
+public void testing() throws JsonIOException, JsonSyntaxException, FileNotFoundException {
+	System.out.println(jsonTestClassRunmode("LoginPageTest"));
+}
 
 	@DataProvider
-	public static Object[][] searchJsonElement(Method m) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
+	public static Object[][] jsonTestDataSet(Method m) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
 		JsonParser jsonParser= new JsonParser();
 		JsonObject jsonObj = jsonParser.parse(new FileReader(System.getProperty("user.dir")+"/src/test/data/TestData.json")).getAsJsonObject();
 		JsonArray array= (JsonArray) jsonObj.get("DataSet");
-		int j=0;
+		int i=0,j=0;
 		Hashtable<String,String> table=null;
-		Object[][] matrix= new Object[array.size()][1];
+		for(JsonElement jsonElement:array) {
+			if(jsonElement.toString().contains((m.getName().toString()))){
+				i++;
+			}
+		}
+		Object[][] matrix= new Object[i][1];
 		for(JsonElement jsonElement :array)
 		{
 			if(jsonElement.toString().contains(m.getName().toString()))
@@ -49,5 +52,26 @@ public class jsonReader {
 			}
 		}
 		return matrix;
+	}
+	
+	public boolean jsonTestClassRunmode(String className) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
+		JsonParser jsonParser= new JsonParser();
+		JsonObject jsonObj = jsonParser.parse(new FileReader(System.getProperty("user.dir")+"/src/test/data/TestData.json")).getAsJsonObject();
+		JsonArray array= (JsonArray) jsonObj.get("TestClassRunmode");
+		for(JsonElement jsonElement :array)
+		{
+			if(jsonElement.toString().contains(className)) {
+				for(Entry<String,JsonElement>entry:jsonElement.getAsJsonObject().entrySet()) {
+					String value=entry.getValue().toString().replace("\"", "").toString();
+					if(value.equalsIgnoreCase("Y")) {
+						return true;
+						
+					}
+				}
+			}
+		}
+		
+		return false;
+		
 	}
 }

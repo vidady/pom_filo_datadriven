@@ -10,7 +10,7 @@ import com.qa.pages.HomePage;
 public class LoginPageTest extends TestBase{
 
 	
-	@Test(dataProvider="dataProvider")
+	@Test(dataProvider="jsonDataProvider")
 	public void loginPageTitleTest(Hashtable<String,String> data) {
 		initial_test_tasks(data);
 		HomePage hp=new HomePage();

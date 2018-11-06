@@ -38,7 +38,7 @@ public class runner {
 			test = new XmlTest(suite);
 			test.setName(tcid.toString().trim());
 			classes = new ArrayList<XmlClass>();
-			classes.add(new XmlClass("com.qa.testcases."+tcid));
+			classes.add(new XmlClass("com.qa.tests."+tcid));
 			test.setXmlClasses(classes);
 		}
 		

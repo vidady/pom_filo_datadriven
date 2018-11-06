@@ -1,4 +1,20 @@
 {
+	
+	"TestClassRunmode":
+	[
+	     {
+	     "TestClass":"LoginPageTest",
+	     "runmode":"N"
+	     },
+	     {
+	     "TestClass":"MyFirstTest",
+	     "runmode":"Y"
+	     }
+	],
+	
+	
+	
+	
 	"DataSet"	:
 	[
 		{
@@ -14,6 +30,28 @@
 			"Type"		     :  "CheckingAcc",
 			"DateOfPayment"  :  "11 05 2018",
 			"TestCase"       :  "testing" 
+		},
+		{
+		   "Test_Case"       : "loginPageTitleTest",
+		   "runmode"         : "Y"
+		},
+		{
+		   "Test_Case"       : "myFirstTestt",
+		   "runmode"         : "Y",
+		   "url"             : "https://www.ashurst.com/",
+		   "testdata"        : "Vivek" 
+		},
+		{
+		   "Test_Case"       : "myFirstTestt",
+		   "runmode"         : "Y",
+		   "url"             : "https://www.ashurst.com/",
+		   "testdata"        : "Dubey" 
+		},
+		{
+		   "Test_Case"       : "mySecondTestt",
+		   "runmode"         : "Y",
+		   "url"             : "https://www.ashurst.com/",
+		   "testdata"        : "Avinash" 
 		}
 	]
 }

@@ -11,7 +11,7 @@ import com.qa.pages.HomePage;
 public class MyFirstTest  extends TestBase{
 
 
-	@Test(dataProvider="dataProvider")
+	@Test(dataProvider="jsonDataProvider")
 	public void myFirstTestt(Hashtable<String,String> data){
 		
 		initial_test_tasks(data);
@@ -22,7 +22,7 @@ public class MyFirstTest  extends TestBase{
 
 	}
 	
-	@Test(dataProvider="dataProvider")
+	@Test(dataProvider="jsonDataProvider")
 	public void mySecondTestt(Hashtable<String,String> data){
 		
 		initial_test_tasks(data);

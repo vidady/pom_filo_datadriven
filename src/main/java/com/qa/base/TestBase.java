@@ -34,8 +34,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 
 import com.codoid.products.exception.FilloException;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
 import com.qa.util.TestUtil;
 import com.qa.util.WebEventListener;
+import com.qa.util.jsonReader;
 import com.qa.util.readAndWriteData;
 
 public class TestBase {
@@ -241,6 +244,11 @@ public class TestBase {
 	public Object[][] dataProvider(Method m) throws FilloException{
 		return readAndWriteData.dataSet(m);
 
+	}
+	
+	@DataProvider
+	public Object[][] jsonDataProvider(Method m) throws JsonIOException, JsonSyntaxException, FileNotFoundException{
+		return jsonReader.jsonTestDataSet(m);
 	}
 
 
