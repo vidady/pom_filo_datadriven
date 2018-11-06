@@ -4,17 +4,16 @@
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="MyFirstTest(failed)">
+  <test thread-count="5" name="LoginPageTest(failed)">
     <classes>
-      <class name="com.qa.testcases.MyFirstTest">
+      <class name="com.qa.tests.LoginPageTest">
         <methods>
-          <include name="myFirstTestt" invocation-numbers="0 1"/>
-          <include name="mySecondTestt" invocation-numbers="0"/>
           <include name="startUp"/>
+          <include name="loginPageTitleTest" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.testcases.MyFirstTest -->
+      </class> <!-- com.qa.tests.LoginPageTest -->
     </classes>
-  </test> <!-- MyFirstTest(failed) -->
+  </test> <!-- LoginPageTest(failed) -->
 </suite> <!-- Failed suite [Portal Automation Testing] -->

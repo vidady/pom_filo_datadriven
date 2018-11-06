@@ -1,5 +1,6 @@
 package com.qa.util;
 
+import java.io.FileNotFoundException;
 import java.lang.reflect.Method;
 import java.util.Hashtable;
 import java.util.List;
@@ -10,6 +11,8 @@ import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
 import com.codoid.products.fillo.Recordset;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
 import com.qa.base.TestBase;
 
 
@@ -19,11 +22,40 @@ public class readAndWriteData {
 
 	public void runmodeCheck( Hashtable<String,String> data){
 		System.out.println(TestBase.className);
-		if(!FiloExcelReader.readClassRunnerMode(TestBase.className).equalsIgnoreCase("Y")) {
-			throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className);
-		}else if(!data.get("runmode").equalsIgnoreCase("Y")) {
-			throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className+" --- Test Case: "+TestBase.TEST);
+		String dataReadConfiguration=TestBase.prop.getProperty("dataReadConfiguration");
+
+		switch(dataReadConfiguration) {
+
+		case "json":
+			System.out.println("data read configuration is json");
+			try {
+				if(!jsonReader.jsonTestClassRunmode(TestBase.className)) {
+					throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className);
+				}else if(!data.get("runmode").equalsIgnoreCase("Y")) {
+					throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className+" --- Test Case: "+TestBase.TEST);
+				}
+			} catch (JsonIOException | JsonSyntaxException | FileNotFoundException e) {
+				e.printStackTrace();
+			}
+			break;
+			
+			
+		case "excel":
+			System.out.println("data read configuration is excel");
+			if(!FiloExcelReader.readClassRunnerMode(TestBase.className).equalsIgnoreCase("Y")) {
+				throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className);
+			}else if(!data.get("runmode").equalsIgnoreCase("Y")) {
+				throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className+" --- Test Case: "+TestBase.TEST);
+			}
+			break;
+			
+		default:
+			System.out.println("data read configuration setting is not properly resolved between json and excel");
+			break;
 		}
+
+
+
 
 
 	}

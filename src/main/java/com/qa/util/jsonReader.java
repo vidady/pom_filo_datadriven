@@ -54,7 +54,7 @@ public void testing() throws JsonIOException, JsonSyntaxException, FileNotFoundE
 		return matrix;
 	}
 	
-	public boolean jsonTestClassRunmode(String className) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
+	public static boolean jsonTestClassRunmode(String className) throws JsonIOException, JsonSyntaxException, FileNotFoundException {
 		JsonParser jsonParser= new JsonParser();
 		JsonObject jsonObj = jsonParser.parse(new FileReader(System.getProperty("user.dir")+"/src/test/data/TestData.json")).getAsJsonObject();
 		JsonArray array= (JsonArray) jsonObj.get("TestClassRunmode");
