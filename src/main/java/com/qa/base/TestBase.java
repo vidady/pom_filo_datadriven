@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -106,12 +107,11 @@ public class TestBase {
 				String browserName=config.getProperty("browser");
 				if(browserName.equalsIgnoreCase("chrome")) {
 					System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver");
-
 					ChromeOptions options=new ChromeOptions();
 					options.addArguments("--disable-notifications");
 					options.addArguments("disable-infobars");
 					options.addArguments("--start-maximized");
-					//options.addArguments("--proxy-server:http://100.0.0.1");
+					options.addArguments("--proxy-server:http://100.0.0.1");
 					//options.addArguments("user-data-dir:directory path of till user data folder");
 					//options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 					System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "browserLogs");
@@ -149,11 +149,11 @@ public class TestBase {
 
 		logger=Logger.getLogger(className);
 		PropertyConfigurator.configure(System.getProperty("user.dir")+"/src/main/java/com/qa/config/log4j.properties");
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
+		driver.manage().window().setSize(new Dimension(1440,900));
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("url"));
 
 	}
 
@@ -227,6 +227,10 @@ public class TestBase {
 		Select s=new Select(element);
 		s.selectByVisibleText(elementName);
 	}
+	
+	public void navigateTo(String url) {
+		driver.navigate().to(url);
+	}
 
 
 
@@ -241,15 +245,20 @@ public class TestBase {
 	
 	
 	@DataProvider
-	public Object[][] dataProvider(Method m) throws FilloException{
-		return readAndWriteData.dataSet(m);
+	public Object[][] dataProvider(Method m) throws FilloException, JsonIOException, JsonSyntaxException, FileNotFoundException{
+		Object[][] dataSet=null;
+		if(config.getProperty("dataReadConfiguration").equalsIgnoreCase("excel")) {
+			System.out.println("data provider is excel");
+			dataSet= readAndWriteData.dataSet(m);
+		}else if(config.getProperty("dataReadConfiguration").equalsIgnoreCase("json"))
+			System.out.println("data provider is json");
+		{dataSet= jsonReader.jsonTestDataSet(m);
+		}
+		
+		return dataSet;
 
 	}
 	
-	@DataProvider
-	public Object[][] jsonDataProvider(Method m) throws JsonIOException, JsonSyntaxException, FileNotFoundException{
-		return jsonReader.jsonTestDataSet(m);
-	}
-
+	
 
 }

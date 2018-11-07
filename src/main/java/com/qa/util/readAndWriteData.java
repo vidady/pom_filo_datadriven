@@ -22,12 +22,12 @@ public class readAndWriteData {
 
 	public void runmodeCheck( Hashtable<String,String> data){
 		System.out.println(TestBase.className);
-		String dataReadConfiguration=TestBase.prop.getProperty("dataReadConfiguration");
+		String dataReadConfiguration=TestBase.config.getProperty("dataReadConfiguration");
 
 		switch(dataReadConfiguration) {
 
 		case "json":
-			System.out.println("data read configuration is json");
+			System.out.println("runmode check from json...");
 			try {
 				if(!jsonReader.jsonTestClassRunmode(TestBase.className)) {
 					throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className);
@@ -41,7 +41,7 @@ public class readAndWriteData {
 			
 			
 		case "excel":
-			System.out.println("data read configuration is excel");
+			System.out.println("runmode check from excel...");
 			if(!FiloExcelReader.readClassRunnerMode(TestBase.className).equalsIgnoreCase("Y")) {
 				throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className);
 			}else if(!data.get("runmode").equalsIgnoreCase("Y")) {

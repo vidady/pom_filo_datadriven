@@ -10,9 +10,10 @@ import com.qa.pages.HomePage;
 public class LoginPageTest extends TestBase{
 
 	
-	@Test(dataProvider="jsonDataProvider")
+	@Test(dataProvider="dataProvider")
 	public void loginPageTitleTest(Hashtable<String,String> data) {
 		initial_test_tasks(data);
+		navigateTo(prop.getProperty("url"));
 		HomePage hp=new HomePage();
 		hp.clickLink("PEOPLE");
 		//hp.nav_to_peoplePage();

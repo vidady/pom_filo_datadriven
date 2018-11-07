@@ -11,10 +11,10 @@ import com.qa.pages.HomePage;
 public class MyFirstTest  extends TestBase{
 
 
-	@Test(dataProvider="jsonDataProvider")
+	@Test(dataProvider="dataProvider")
 	public void myFirstTestt(Hashtable<String,String> data){
-		
 		initial_test_tasks(data);
+		navigateTo(prop.getProperty("url"));
 		HomePage hp=new HomePage();
 		hp.nav_to_peoplePage();
 
@@ -22,10 +22,10 @@ public class MyFirstTest  extends TestBase{
 
 	}
 	
-	@Test(dataProvider="jsonDataProvider")
+	@Test(dataProvider="dataProvider")
 	public void mySecondTestt(Hashtable<String,String> data){
-		
 		initial_test_tasks(data);
+		navigateTo(prop.getProperty("url"));
 		HomePage hp=new HomePage();
 		hp.nav_to_peoplePage();
 
