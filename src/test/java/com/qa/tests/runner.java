@@ -31,7 +31,7 @@ public class runner {
 		suite = new XmlSuite();
 		suite.setName("Portal Automation Testing");
 		suite.addListener("com.qa.ExtentReportListener.ExtentReporterNG" );
-		
+		suite.addListener("com.qa.util.WebEventListener" );
 		
 		for(String tcid:FiloExcelReader.getAllTestClasses()) {
 			System.out.println(tcid);

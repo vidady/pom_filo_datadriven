@@ -3,6 +3,7 @@
 <suite name="Failed suite [Portal Automation Testing]">
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="com.qa.util.WebEventListener"/>
   </listeners>
   <test thread-count="5" name="LoginPageTest(failed)">
     <classes>
