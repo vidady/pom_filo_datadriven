@@ -35,7 +35,6 @@ public class ExtentManager {
         htmlReporter.config().setDocumentTitle(fileName);
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setReportName(fileName);
- 
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
  

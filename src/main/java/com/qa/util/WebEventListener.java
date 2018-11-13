@@ -188,6 +188,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void onTestStart(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " started!"));
         ExtentTest extentTest = classLevelReport.get().createNode(result.getMethod().getMethodName()); 
+        extentTest.assignCategory("Test_Case_Level_Regression_Suite");
         //extent.createTest(result.getMethod().getMethodName(),result.getMethod().getDescription());
         test.set(extentTest);
 	}
@@ -206,7 +207,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		TestUtil.takeScreenshot();
         String exceptionMessage = result.getThrowable().getClass().toString();
         test.get()
-		.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
+		.fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
 				+ "Exception Occured: Click to see. </summary>" + "</font>" + "</b >"
 				+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =Screenshots/failed_screen.png"
 				+ " target=\"_blank\"><img src =\"Screenshots/failed_screen.png"
@@ -221,7 +222,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	        //test.get().skip(result.getThrowable());
 	        String exceptionMessage = result.getThrowable().getClass().toString();
 	        test.get()
-			.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "yellow>"
+			.skip("<details>" + "<summary>" + "<b>" + "<font color=" + "yellow>"
 					+ "Exception Occured: Click to see. </summary>" + "</font>" + "</b >"
 					+ exceptionMessage.replaceAll(",", "<br>"));
 	        test.get().log(Status.INFO, result.getMethod().getMethodName() + " Execution Skipped");
@@ -237,6 +238,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void onStart(ITestContext context) {
 		 System.out.println("Extent Reports Version 3 Test Suite started!");
 		 ExtentTest parent = extent.createTest(context.getName().toString());
+		 parent.assignCategory("Epic_Level_Regression_Suite");
 		 classLevelReport.set(parent);
 
 			

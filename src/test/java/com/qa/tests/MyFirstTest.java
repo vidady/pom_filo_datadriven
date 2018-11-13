@@ -2,7 +2,6 @@ package com.qa.tests;
 
 import java.util.Hashtable;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
@@ -18,7 +17,6 @@ public class MyFirstTest  extends TestBase{
 		navigateTo(prop.getProperty("url"));
 		HomePage hp=new HomePage();
 		hp.nav_to_peoplePage();
-		Assert.fail();
 
 
 

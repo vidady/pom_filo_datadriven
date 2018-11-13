@@ -4,11 +4,8 @@ import java.util.Hashtable;
 
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
 import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
-
-import junit.framework.Assert;
 
 public class LoginPageTest extends TestBase{
 
@@ -19,8 +16,7 @@ public class LoginPageTest extends TestBase{
 		navigateTo(prop.getProperty("url"));
 		HomePage hp=new HomePage();
 		hp.clickLink("PEOPLE");
-		test.get().log(Status.INFO, "ABOUT TO MAKE TEST CASE FAIL 2");
-		Assert.fail();
+		
 	}
 	
 

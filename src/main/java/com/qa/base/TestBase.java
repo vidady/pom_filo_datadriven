@@ -35,6 +35,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.codoid.products.exception.FilloException;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
@@ -246,6 +247,25 @@ public class TestBase {
 		softAssert.assertEquals(element.getText().toString(), expectedText);
 		softAssert.assertAll();
 	}
+	
+	//******************************** Reporting Functions ***************************************//
+	
+	public void reportPass(String message) {
+		test.get().log(Status.PASS, message);
+	}
+	
+	public void reportFail(String message) {
+		test.get().log(Status.FAIL, message);
+	}
+	
+	public void reportInfo(String message) {
+		test.get().log(Status.INFO, message);
+	}
+	
+	public void reportSkip(String message) {
+		test.get().log(Status.SKIP, message);
+	}
+
 
 	//********************************Data Provider*****************************************//
 
