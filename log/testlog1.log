@@ -532,3 +532,27 @@
 2018-11-13 21:35:10,057 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
 2018-11-13 21:35:10,323 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[ChromeDriver: chrome on MAC (d7fb06547c7451c14e6aa1cc0b381f56)] -> tag name: a]
 2018-11-13 21:35:10,443 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[ChromeDriver: chrome on MAC (d7fb06547c7451c14e6aa1cc0b381f56)] -> tag name: a]
+2018-11-13 22:14:17,897 [main] INFO LoginPageTest----loginPageTitleTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 22:14:29,971 [main] INFO LoginPageTest----loginPageTitleTest - Navigated to:'https://www.ashurst.com/'
+2018-11-13 22:14:29,999 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-13 22:14:30,153 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-13 22:14:30,426 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[ChromeDriver: chrome on MAC (d34bc13079da75a5c276047c41961685)] -> tag name: a]
+2018-11-13 22:14:30,559 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[ChromeDriver: chrome on MAC (d34bc13079da75a5c276047c41961685)] -> tag name: a]
+2018-11-13 22:17:53,069 [main] INFO LoginPageTest----loginPageTitleTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 22:18:05,061 [main] INFO LoginPageTest----loginPageTitleTest - Navigated to:'https://www.ashurst.com/'
+2018-11-13 22:18:05,090 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-13 22:18:05,285 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-13 22:18:05,750 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[ChromeDriver: chrome on MAC (3b9947c39ba98578839cee2d742b8ab1)] -> tag name: a]
+2018-11-13 22:18:05,931 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[ChromeDriver: chrome on MAC (3b9947c39ba98578839cee2d742b8ab1)] -> tag name: a]
+2018-11-13 22:19:48,602 [main] INFO LoginPageTest----loginPageTitleTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 22:20:00,593 [main] INFO LoginPageTest----loginPageTitleTest - Navigated to:'https://www.ashurst.com/'
+2018-11-13 22:20:00,626 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-13 22:20:00,777 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-13 22:20:01,090 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[ChromeDriver: chrome on MAC (e90bd92e5456b9312439b22330d72cf0)] -> tag name: a]
+2018-11-13 22:20:01,242 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[ChromeDriver: chrome on MAC (e90bd92e5456b9312439b22330d72cf0)] -> tag name: a]
+2018-11-13 22:21:39,773 [main] INFO LoginPageTest----loginPageTitleTest - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 22:21:56,534 [main] INFO LoginPageTest----loginPageTitleTest - Navigated to:'https://www.ashurst.com/'
+2018-11-13 22:21:56,566 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-11-13 22:21:56,697 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-11-13 22:21:56,983 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[ChromeDriver: chrome on MAC (b0f89ded8346ac49907912331459e8df)] -> tag name: a]
+2018-11-13 22:21:57,101 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[ChromeDriver: chrome on MAC (b0f89ded8346ac49907912331459e8df)] -> tag name: a]

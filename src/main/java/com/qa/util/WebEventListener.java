@@ -20,6 +20,10 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	private static ExtentReports extent = ExtentManager.createInstance();
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     public static ThreadLocal<ExtentTest> classLevelReport = new ThreadLocal<ExtentTest>();
+    
+    public static ThreadLocal<ExtentTest> test() {
+    	return test;
+    }
 
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		System.out.println("Before navigating to: '" + url + "'");
@@ -203,7 +207,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
         String exceptionMessage = result.getThrowable().getClass().toString();
         test.get()
 		.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
-				+ "Exception Occured:Click to see </summary>" + "</font>" + "</b >"
+				+ "Exception Occured: Click to see. </summary>" + "</font>" + "</b >"
 				+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =Screenshots/failed_screen.png"
 				+ " target=\"_blank\"><img src =\"Screenshots/failed_screen.png"
 				+ "\" height=\"42\" width \"42\"/></a>" + "</details>");
@@ -218,9 +222,9 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	        String exceptionMessage = result.getThrowable().getClass().toString();
 	        test.get()
 			.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "yellow>"
-					+ "Exception Occured:Click to see </summary>" + "</font>" + "</b >"
+					+ "Exception Occured: Click to see. </summary>" + "</font>" + "</b >"
 					+ exceptionMessage.replaceAll(",", "<br>"));
-	        test.get().log(Status.INFO, result.getMethod().getMethodName() + " Execution Ended");
+	        test.get().log(Status.INFO, result.getMethod().getMethodName() + " Execution Skipped");
 	        test.get().log(Status.SKIP, "SKIPPED");
 	}
 

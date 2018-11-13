@@ -34,6 +34,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentTest;
 import com.codoid.products.exception.FilloException;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
@@ -54,7 +55,7 @@ public class TestBase {
 	public static Logger logger;
 	public static String className;
 	public static SoftAssert softAssert;
-
+	public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 	public TestBase() {
 
 		try {
@@ -76,8 +77,7 @@ public class TestBase {
 			}
 
 		softAssert=new SoftAssert();
-
-
+		test=WebEventListener.test();
 
 	}
 
