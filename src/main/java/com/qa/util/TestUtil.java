@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -70,13 +69,23 @@ public class TestUtil extends TestBase{
 	public static void takeScreenshot(){
 
 		//decide name - time stamp
-		Date d=new Date();
-		String screenshotFile=d.toString().replace(":", "_").replace(" ", "_")+".png";
-		String path=AppConstants.SCREENSHOT_PATH+"//"+screenshotFile;
+		//Date d=new Date();
+		String screenshotFile="failed_screen.png";
+		String path=AppConstants.SCREENSHOT_PATH;
+		File testDirectory = new File(path);
+        if (!testDirectory.exists()) {
+            if (testDirectory.mkdir()) {
+                System.out.println("Directory: " + path + " is created!" );
+            } else {
+                System.out.println("Failed to create directory: " + path);
+            }
+        } else {
+            System.out.println("Directory already exists: " + path);
+        }
 
 		File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try{
-			FileUtils.copyFile(srcFile, new File(path));
+			FileUtils.copyFile(srcFile, new File(path+"//"+screenshotFile));
 		}catch (IOException e){
 			e.printStackTrace();
 		}

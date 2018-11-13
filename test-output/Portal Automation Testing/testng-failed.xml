@@ -17,4 +17,17 @@
       </class> <!-- com.qa.tests.LoginPageTest -->
     </classes>
   </test> <!-- LoginPageTest(failed) -->
+  <test thread-count="5" name="MyFirstTest(failed)">
+    <classes>
+      <class name="com.qa.tests.MyFirstTest">
+        <methods>
+          <include name="startUp"/>
+          <include name="mySecondTestt" invocation-numbers="0"/>
+          <include name="myFirstTestt" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.tests.MyFirstTest -->
+    </classes>
+  </test> <!-- MyFirstTest(failed) -->
 </suite> <!-- Failed suite [Portal Automation Testing] -->

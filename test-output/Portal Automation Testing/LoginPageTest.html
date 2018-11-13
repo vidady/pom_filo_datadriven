@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LoginPageTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 13 15:55:59 IST 2018</td>
+<td>Started on:</td><td>Tue Nov 13 21:34:54 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4930 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21796 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,21 +76,21 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qa.tests.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.qa.tests.LoginPageTest<br>Parameters: {Test_Case=loginPageTitleTest, runmode=Y}</td>
-<td><div><pre>org.testng.SkipException: Runmode of the test data is set to NO for class: LoginPageTest
-	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:33)
-	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:164)
-	at com.qa.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:15)
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.fail(Assert.java:56)
+	at com.qa.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:21)
 	at com.qa.tests.runner.test_runner(runner.java:50)
 	at com.qa.tests.runner.main(runner.java:57)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace961859592", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace961859592'><pre>org.testng.SkipException: Runmode of the test data is set to NO for class: LoginPageTest
-	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:33)
-	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:164)
-	at com.qa.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2076462312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2076462312'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.fail(Assert.java:56)
+	at com.qa.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -112,8 +112,8 @@ function toggleAllBoxes() {
 	at com.qa.tests.runner.test_runner(runner.java:50)
 	at com.qa.tests.runner.main(runner.java:57)
 </pre></div></td>
-<td>0</td>
-<td>com.qa.tests.LoginPageTest@82de64a</td></tr>
+<td>13</td>
+<td>com.qa.tests.LoginPageTest@62f4ff3b</td></tr>
 </table><p>
 </body>
 </html>

@@ -268,3 +268,267 @@
 2018-11-13 15:56:44,000 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
 2018-11-13 15:56:44,000 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on XP (8b7a5b98b37f92c61cd8977e209584d5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
 2018-11-13 15:56:44,085 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on XP (8b7a5b98b37f92c61cd8977e209584d5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:19:56,950 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:20:13,195 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:20:13,225 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:20:13,260 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:20:13,272 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (7049d5f97764d54bab498ee130d12f6e)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:20:13,402 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (7049d5f97764d54bab498ee130d12f6e)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:20:13,415 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:20:19,785 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:20:19,788 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:20:19,816 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:20:19,820 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (7049d5f97764d54bab498ee130d12f6e)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:20:19,962 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (7049d5f97764d54bab498ee130d12f6e)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:20:19,973 - MyFirstTest----mySecondTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:20:25,700 - MyFirstTest----mySecondTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:20:25,704 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:20:25,746 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:20:25,748 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (7049d5f97764d54bab498ee130d12f6e)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:20:25,923 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (7049d5f97764d54bab498ee130d12f6e)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:22:08,838 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:22:22,511 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:22:22,551 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 20:22:22,739 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 20:22:23,143 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (887dc50347b8a6dd298a0038bdb72b41)] -> tag name: a]
+2018-11-13 20:22:23,291 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (887dc50347b8a6dd298a0038bdb72b41)] -> tag name: a]
+2018-11-13 20:22:30,237 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:22:42,675 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:22:42,678 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:22:42,707 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:22:42,709 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (6d3ae3797dd5a7851fa5d29ebcd205b9)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:22:42,863 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (6d3ae3797dd5a7851fa5d29ebcd205b9)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:22:42,938 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:22:54,995 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:22:54,997 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:22:55,032 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:22:55,034 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (6d3ae3797dd5a7851fa5d29ebcd205b9)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:22:55,311 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (6d3ae3797dd5a7851fa5d29ebcd205b9)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:22:55,389 - MyFirstTest----mySecondTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:23:04,431 - MyFirstTest----mySecondTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:23:04,437 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:23:04,474 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:23:04,477 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (6d3ae3797dd5a7851fa5d29ebcd205b9)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:23:04,747 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (6d3ae3797dd5a7851fa5d29ebcd205b9)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:31:15,876 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:31:29,859 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:31:29,891 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 20:31:30,013 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 20:31:30,271 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (0960b30ff778fc3ccaa79a8a45383988)] -> tag name: a]
+2018-11-13 20:31:30,385 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (0960b30ff778fc3ccaa79a8a45383988)] -> tag name: a]
+2018-11-13 20:31:37,311 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:31:49,800 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:31:49,804 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:31:49,835 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:31:49,837 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (c88d87529c6d96fe484a88a7d391fcc0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:31:50,007 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (c88d87529c6d96fe484a88a7d391fcc0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:31:56,652 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:32:01,604 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:32:01,606 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:32:01,632 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:32:01,633 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (c88d87529c6d96fe484a88a7d391fcc0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:32:01,810 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (c88d87529c6d96fe484a88a7d391fcc0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:32:02,344 - MyFirstTest----mySecondTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:32:07,434 - MyFirstTest----mySecondTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:32:07,438 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:32:07,467 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:32:07,468 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (c88d87529c6d96fe484a88a7d391fcc0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:32:07,631 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (c88d87529c6d96fe484a88a7d391fcc0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:37:05,638 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:37:17,519 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:37:17,549 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 20:37:17,753 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 20:37:18,067 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (e3c96c4629c4c6f7a937822db7c1f5a3)] -> tag name: a]
+2018-11-13 20:37:18,267 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (e3c96c4629c4c6f7a937822db7c1f5a3)] -> tag name: a]
+2018-11-13 20:37:25,243 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:37:40,119 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:37:40,121 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:37:40,162 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:37:40,165 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (e7dbc0e93e1e7074cebe575157ca4f5b)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:37:40,378 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (e7dbc0e93e1e7074cebe575157ca4f5b)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:37:46,842 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:37:52,292 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:37:52,295 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:37:52,325 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:37:52,326 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (e7dbc0e93e1e7074cebe575157ca4f5b)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:37:52,589 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (e7dbc0e93e1e7074cebe575157ca4f5b)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:37:58,955 - MyFirstTest----mySecondTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:38:05,030 - MyFirstTest----mySecondTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:38:05,035 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:38:05,061 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:38:05,065 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (e7dbc0e93e1e7074cebe575157ca4f5b)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:38:05,258 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (e7dbc0e93e1e7074cebe575157ca4f5b)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:46:22,563 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:46:34,421 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:46:34,451 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 20:46:34,591 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 20:46:35,033 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (4f798e86881e5745b5c6e4f8c648a17b)] -> tag name: a]
+2018-11-13 20:46:35,209 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (4f798e86881e5745b5c6e4f8c648a17b)] -> tag name: a]
+2018-11-13 20:46:42,160 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:46:57,344 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:46:57,347 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:46:57,375 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:46:57,377 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (938af56b8904fa2f5e3fd5887ffbc46a)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:46:57,550 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (938af56b8904fa2f5e3fd5887ffbc46a)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:47:03,780 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:47:09,340 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:47:09,343 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:47:09,382 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:47:09,384 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (938af56b8904fa2f5e3fd5887ffbc46a)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:47:09,566 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (938af56b8904fa2f5e3fd5887ffbc46a)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:47:10,484 - MyFirstTest----mySecondTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:47:15,431 - MyFirstTest----mySecondTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:47:15,434 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:47:15,462 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:47:15,464 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (938af56b8904fa2f5e3fd5887ffbc46a)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:47:15,617 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (938af56b8904fa2f5e3fd5887ffbc46a)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:51:27,242 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:51:39,669 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:51:39,761 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 20:51:39,932 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 20:51:40,401 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (7e1256bf2cf6b74bd8a1638cb7f26ec0)] -> tag name: a]
+2018-11-13 20:51:40,535 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (7e1256bf2cf6b74bd8a1638cb7f26ec0)] -> tag name: a]
+2018-11-13 20:51:47,455 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:52:00,428 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:52:00,433 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:52:00,470 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:52:00,472 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (c3ba5dc6523a9011d5a6ef2740022f47)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:52:00,703 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (c3ba5dc6523a9011d5a6ef2740022f47)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:52:08,976 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:52:16,355 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:52:16,357 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:52:16,404 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:52:16,406 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (c3ba5dc6523a9011d5a6ef2740022f47)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:52:16,673 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (c3ba5dc6523a9011d5a6ef2740022f47)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:52:22,289 - MyFirstTest----mySecondTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:52:27,263 - MyFirstTest----mySecondTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:52:27,267 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:52:27,295 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:52:27,297 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (c3ba5dc6523a9011d5a6ef2740022f47)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:52:27,474 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (c3ba5dc6523a9011d5a6ef2740022f47)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:54:09,803 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:54:21,426 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:54:21,461 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 20:54:21,570 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 20:54:21,912 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (283d27babd80ab8b8c38cfb15d7a9ca5)] -> tag name: a]
+2018-11-13 20:54:22,034 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (283d27babd80ab8b8c38cfb15d7a9ca5)] -> tag name: a]
+2018-11-13 20:54:28,954 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:54:43,284 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:54:43,286 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:54:43,329 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:54:43,332 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (711f4735b032057b899f9b1ff75d52ca)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:54:43,582 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (711f4735b032057b899f9b1ff75d52ca)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:54:50,299 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:54:55,670 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:54:55,671 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:54:55,712 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:54:55,713 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (711f4735b032057b899f9b1ff75d52ca)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:54:55,987 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (711f4735b032057b899f9b1ff75d52ca)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:55:01,833 - MyFirstTest----mySecondTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:55:06,596 - MyFirstTest----mySecondTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:55:06,601 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:55:06,624 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:55:06,627 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (711f4735b032057b899f9b1ff75d52ca)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:55:06,866 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (711f4735b032057b899f9b1ff75d52ca)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:56:49,081 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:57:01,406 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:57:01,440 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 20:57:01,647 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 20:57:01,993 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (edb806b7a5e567d3edcfd294ffad901f)] -> tag name: a]
+2018-11-13 20:57:02,146 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (edb806b7a5e567d3edcfd294ffad901f)] -> tag name: a]
+2018-11-13 20:57:09,059 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:57:21,370 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:57:21,372 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:57:21,403 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:57:21,404 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (ea13e2d07d832bc21ff0a372d2e31b60)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:57:21,556 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (ea13e2d07d832bc21ff0a372d2e31b60)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:57:28,266 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:57:33,133 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:57:33,135 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:57:33,165 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:57:33,167 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (ea13e2d07d832bc21ff0a372d2e31b60)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:57:33,469 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (ea13e2d07d832bc21ff0a372d2e31b60)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:57:37,877 - MyFirstTest----mySecondTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 20:57:57,098 - MyFirstTest----mySecondTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 20:57:57,100 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:57:57,144 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-13 20:57:57,145 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (ea13e2d07d832bc21ff0a372d2e31b60)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 20:57:57,370 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (ea13e2d07d832bc21ff0a372d2e31b60)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-13 21:00:51,854 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:01:03,424 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:01:03,464 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:01:03,622 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:01:03,924 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (987009f083f4e6dbf1cff117b46ed03b)] -> tag name: a]
+2018-11-13 21:01:04,073 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (987009f083f4e6dbf1cff117b46ed03b)] -> tag name: a]
+2018-11-13 21:03:25,803 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:03:37,081 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:03:37,114 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:03:37,264 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:03:37,596 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (64f5e8a65acbb1ab8d9774d4942b8a7f)] -> tag name: a]
+2018-11-13 21:03:37,734 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (64f5e8a65acbb1ab8d9774d4942b8a7f)] -> tag name: a]
+2018-11-13 21:05:05,068 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:05:17,370 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:05:17,405 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:05:17,524 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:05:17,861 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (6d19123dcc997d935fde8e26000e6299)] -> tag name: a]
+2018-11-13 21:05:18,060 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (6d19123dcc997d935fde8e26000e6299)] -> tag name: a]
+2018-11-13 21:08:55,628 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:09:07,071 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:09:07,104 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:09:07,225 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:09:07,540 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (fb9c98e98c06b9491e40ab5cdb1eab97)] -> tag name: a]
+2018-11-13 21:09:07,692 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (fb9c98e98c06b9491e40ab5cdb1eab97)] -> tag name: a]
+2018-11-13 21:11:12,354 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:11:25,772 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:11:25,804 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:11:25,955 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:11:26,278 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (b945fbc226e3c0d364de0e6d6833e7bf)] -> tag name: a]
+2018-11-13 21:11:26,423 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (b945fbc226e3c0d364de0e6d6833e7bf)] -> tag name: a]
+2018-11-13 21:16:08,267 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:16:20,285 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:16:20,322 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:16:20,472 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:16:20,912 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (852c87f15bd1f13ebdb1910a160ecc9d)] -> tag name: a]
+2018-11-13 21:16:21,112 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (852c87f15bd1f13ebdb1910a160ecc9d)] -> tag name: a]
+2018-11-13 21:19:36,016 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:19:48,867 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:19:48,898 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:19:49,039 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:19:49,379 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (4f3efdd863c66208ffe3294dc84ceb42)] -> tag name: a]
+2018-11-13 21:19:49,512 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (4f3efdd863c66208ffe3294dc84ceb42)] -> tag name: a]
+2018-11-13 21:23:25,224 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:23:38,538 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:23:38,568 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:23:38,785 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:23:39,300 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (5dbb01201df52adacf6814c58eb84af6)] -> tag name: a]
+2018-11-13 21:23:39,501 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (5dbb01201df52adacf6814c58eb84af6)] -> tag name: a]
+2018-11-13 21:26:48,009 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:27:00,735 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:27:00,767 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:27:00,953 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:27:01,418 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (9340d1eb4967c254eae3a4924c7fe920)] -> tag name: a]
+2018-11-13 21:27:01,528 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (9340d1eb4967c254eae3a4924c7fe920)] -> tag name: a]
+2018-11-13 21:30:20,895 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:30:33,511 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:30:33,537 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:30:33,667 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:30:33,978 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (be10879baa057f2787b0f80a3ec2c81f)] -> tag name: a]
+2018-11-13 21:30:34,094 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (be10879baa057f2787b0f80a3ec2c81f)] -> tag name: a]
+2018-11-13 21:31:45,949 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:31:58,172 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:31:58,205 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:31:58,334 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:31:58,731 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (4a95595fbcff543cd1738b71274556c1)] -> tag name: a]
+2018-11-13 21:31:58,922 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (4a95595fbcff543cd1738b71274556c1)] -> tag name: a]
+2018-11-13 21:33:25,301 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:33:36,765 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:33:36,786 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:33:36,882 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:33:37,116 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (9dd1edb28a77b31a38fbadb1febc2f9e)] -> tag name: a]
+2018-11-13 21:33:42,300 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (9dd1edb28a77b31a38fbadb1febc2f9e)] -> tag name: a]
+2018-11-13 21:34:56,795 - LoginPageTest----loginPageTitleTest -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-13 21:35:09,846 - LoginPageTest----loginPageTitleTest -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-13 21:35:09,882 - LoginPageTest----loginPageTitleTest -INFO - Trying to find Element By : By.tagName: a
+2018-11-13 21:35:10,057 - LoginPageTest----loginPageTitleTest -INFO - Found Element By : By.tagName: a
+2018-11-13 21:35:10,323 - LoginPageTest----loginPageTitleTest -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (d7fb06547c7451c14e6aa1cc0b381f56)] -> tag name: a]
+2018-11-13 21:35:10,443 - LoginPageTest----loginPageTitleTest -INFO - Clicked on: [[ChromeDriver: chrome on MAC (d7fb06547c7451c14e6aa1cc0b381f56)] -> tag name: a]

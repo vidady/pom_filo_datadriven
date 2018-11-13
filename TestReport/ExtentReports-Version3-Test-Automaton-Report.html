@@ -15,7 +15,7 @@
 
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
-	<title>C:\Work\AUTOMATION_GIT\pom_filo_datadriven\TestReport\ExtentReports-Version3-Test-Automaton-Report.html</title>
+	<title>/Users/vivek/eclipse-workspace/datadriven.core/TestReport/ExtentReports-Version3-Test-Automaton-Report.html</title>
 
 	<style type='text/css'>
 	</style>
@@ -37,7 +37,7 @@
 		</ul>
 
 		<!-- report name -->
-		<span class='report-name'>C:\Work\AUTOMATION_GIT\pom_filo_datadriven\TestReport\ExtentReports-Version3-Test-Automaton-Report.html</span>
+		<span class='report-name'>/Users/vivek/eclipse-workspace/datadriven.core/TestReport/ExtentReports-Version3-Test-Automaton-Report.html</span>
 		
 		<!-- report headline -->
 		<span class='report-headline'></span>
@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 13, 2018 03:55:59 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 13, 2018 09:34:54 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -121,25 +122,112 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf skip' status='skip' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>LoginPageTest</span>
-						<span class='test-time'>Nov 13, 2018 03:55:59 PM</span>
+						<span class='test-time'>Nov 13, 2018 09:34:54 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 13, 2018 09:34:54 PM</span>
+	<span class='label end-time'>Nov 13, 2018 09:35:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+694ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>loginPageTitleTest</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 13, 2018 09:35:16 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+393ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:34:56 PM</td>
+													<td class='step-details'>Before navigating to: 'https://www.ashurst.com/'</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:35:09 PM</td>
+													<td class='step-details'>Navigated to:'https://www.ashurst.com/'</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:35:09 PM</td>
+													<td class='step-details'>Trying to find Element By : By.tagName: a</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:35:10 PM</td>
+													<td class='step-details'>Found Element By : By.tagName: a</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:35:10 PM</td>
+													<td class='step-details'>Trying to click on: [[ChromeDriver: chrome on MAC (d7fb06547c7451c14e6aa1cc0b381f56)] -> tag name: a]</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:35:10 PM</td>
+													<td class='step-details'>Clicked on: [[ChromeDriver: chrome on MAC (d7fb06547c7451c14e6aa1cc0b381f56)] -> tag name: a]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:35:16 PM</td>
+													<td class='step-details'><details><summary><b><font color=red>Exception Occured:Click to see </summary></font></b >class junit.framework.AssertionFailedError<br><a href =Screenshots/failed_screen.png target="_blank"><img src ="Screenshots/failed_screen.png" height="42" width "42"/></a></details></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:35:16 PM</td>
+													<td class='step-details'>loginPageTitleTest Execution Ended</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>9:35:16 PM</td>
+													<td class='step-details'>FAILED</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf skip' status='skip' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>MyFirstTest</span>
+						<span class='test-time'>Nov 13, 2018 09:35:21 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 13, 2018 03:55:59 PM</span>
-	<span class='label end-time'>Nov 13, 2018 03:56:04 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+237ms</span>
+	<span class='label start-time'>Nov 13, 2018 09:35:21 PM</span>
+	<span class='label end-time'>Nov 13, 2018 09:35:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+579ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf skip' status='skip' test-id='2'>
+				<li class='node level-1 leaf skip' status='skip' test-id='4'>
 					<div class='collapsible-header'>
-						<h5 class='node-name'>loginPageTitleTest</h5>
-						<span class="node-time label grey lighten-1 white-text">Nov 13, 2018 03:56:04 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+5ms</span>
+						<h5 class='node-name'>myFirstTestt</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 13, 2018 09:35:23 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+38ms</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
@@ -155,17 +243,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>3:56:04 PM</td>
-													<td class='step-details'><details><summary><b><font color=red>Exception Occured:Click to see </summary></font></b >class org.testng.SkipException<br><a href =screenshots/failed_screen" height="42" width "42"/></a></details></td>
+													<td class='timestamp'>9:35:23 PM</td>
+													<td class='step-details'><details><summary><b><font color=yellow>Exception Occured:Click to see </summary></font></b >class org.testng.SkipException</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:04 PM</td>
-													<td class='step-details'>loginPageTitleTest Execution Ended</td>
+													<td class='timestamp'>9:35:23 PM</td>
+													<td class='step-details'>myFirstTestt Execution Ended</td>
 												</tr>
 												<tr class='log' status='skip'>
 													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>3:56:04 PM</td>
+													<td class='timestamp'>9:35:23 PM</td>
 													<td class='step-details'>SKIPPED</td>
 												</tr>
 										</tbody>
@@ -173,31 +261,12 @@
 								</div>
 						</div>
 				</li>
-	</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>MyFirstTest</span>
-						<span class='test-time'>Nov 13, 2018 03:56:04 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 13, 2018 03:56:04 PM</span>
-	<span class='label end-time'>Nov 13, 2018 03:56:44 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 39s+105ms</span>
-</div>
-	<ul class='collapsible node-list' data-collapsible='accordion'>
-		
-				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+				<li class='node level-1 leaf skip' status='skip' test-id='5'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>myFirstTestt</h5>
-						<span class="node-time label grey lighten-1 white-text">Nov 13, 2018 03:56:22 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+946ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Nov 13, 2018 09:35:23 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+35ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -210,110 +279,32 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:08 PM</td>
-													<td class='step-details'>Before navigating to: 'https://www.ashurst.com/'</td>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:35:23 PM</td>
+													<td class='step-details'><details><summary><b><font color=yellow>Exception Occured:Click to see </summary></font></b >class org.testng.SkipException</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:22 PM</td>
-													<td class='step-details'>Navigated to:'https://www.ashurst.com/'</td>
+													<td class='timestamp'>9:35:23 PM</td>
+													<td class='step-details'>myFirstTestt Execution Ended</td>
 												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:22 PM</td>
-													<td class='step-details'>Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:22 PM</td>
-													<td class='step-details'>Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:22 PM</td>
-													<td class='step-details'>Trying to click on: [[ChromeDriver: chrome on XP (8b7a5b98b37f92c61cd8977e209584d5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:22 PM</td>
-													<td class='step-details'>Clicked on: [[ChromeDriver: chrome on XP (8b7a5b98b37f92c61cd8977e209584d5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]</td>
-												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:56:22 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>9:35:23 PM</td>
+													<td class='step-details'>SKIPPED</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='5'>
-					<div class='collapsible-header'>
-						<h5 class='node-name'>myFirstTestt</h5>
-						<span class="node-time label grey lighten-1 white-text">Nov 13, 2018 03:56:33 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+890ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:22 PM</td>
-													<td class='step-details'>Before navigating to: 'https://www.ashurst.com/'</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:33 PM</td>
-													<td class='step-details'>Navigated to:'https://www.ashurst.com/'</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:33 PM</td>
-													<td class='step-details'>Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:33 PM</td>
-													<td class='step-details'>Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:33 PM</td>
-													<td class='step-details'>Trying to click on: [[ChromeDriver: chrome on XP (8b7a5b98b37f92c61cd8977e209584d5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:33 PM</td>
-													<td class='step-details'>Clicked on: [[ChromeDriver: chrome on XP (8b7a5b98b37f92c61cd8977e209584d5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]</td>
-												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:56:33 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+				<li class='node level-1 leaf skip' status='skip' test-id='6'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>mySecondTestt</h5>
-						<span class="node-time label grey lighten-1 white-text">Nov 13, 2018 03:56:44 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+698ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Nov 13, 2018 09:35:23 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+34ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -326,40 +317,20 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:33 PM</td>
-													<td class='step-details'>Before navigating to: 'https://www.ashurst.com/'</td>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:35:23 PM</td>
+													<td class='step-details'><details><summary><b><font color=yellow>Exception Occured:Click to see </summary></font></b >class org.testng.SkipException</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:43 PM</td>
-													<td class='step-details'>Navigated to:'https://www.ashurst.com/'</td>
+													<td class='timestamp'>9:35:23 PM</td>
+													<td class='step-details'>mySecondTestt Execution Ended</td>
 												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:43 PM</td>
-													<td class='step-details'>Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:44 PM</td>
-													<td class='step-details'>Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:44 PM</td>
-													<td class='step-details'>Trying to click on: [[ChromeDriver: chrome on XP (8b7a5b98b37f92c61cd8977e209584d5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:56:44 PM</td>
-													<td class='step-details'>Clicked on: [[ChromeDriver: chrome on XP (8b7a5b98b37f92c61cd8977e209584d5)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]</td>
-												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:56:44 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>9:35:23 PM</td>
+													<td class='step-details'>SKIPPED</td>
 												</tr>
 										</tbody>
 									</table>
@@ -402,10 +373,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75%'>3</span> others
 				</div>
 			</div>
 		</div>
@@ -417,10 +388,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='13.043%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='86.957%'>20</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='7.143%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='92.857%'>13</span> others
 				</div>
 			</div>
 		</div>
@@ -445,25 +416,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>23</div>
+					<div class='panel-lead'>14</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 13, 2018 03:55:59 PM</div>
+					<div class='panel-lead'>Nov 13, 2018 09:34:54 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 13, 2018 03:56:44 PM</div>
+			 		<div class='panel-lead'>Nov 13, 2018 09:35:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 45s+25ms</div>
+					<div class='panel-lead'>0h 0m 29s+136ms</div>
 				</div>
 			</div>
 		</div>
@@ -476,22 +447,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 3,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 1,
-				exceptionsParent: 1,
+				skipParent: 3,
+				exceptionsParent: 4,
 				
-				passChild: 3,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 1,
-				infoChild: 19,
-				exceptionsChild: 2,
+				skipChild: 3,
+				infoChild: 10,
+				exceptionsChild: 8,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

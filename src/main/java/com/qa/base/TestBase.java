@@ -54,7 +54,7 @@ public class TestBase {
 	public static Logger logger;
 	public static String className;
 	public static SoftAssert softAssert;
-	
+
 	public TestBase() {
 
 		try {
@@ -84,8 +84,14 @@ public class TestBase {
 	//********************************Browser invoke function*****************************************//
 
 	public static void initialization() {
+		String OS = System.getProperty("os.name").toString().toLowerCase();
+		if(OS.contains("mac"))
+			OS="MAC";
+		else if(OS.contains("win"))
+			OS="WINDOWS";
+		System.out.println(OS);
 
-		switch(config.getProperty("OS")) {
+		switch(OS) {
 		case "WINDOWS":
 			if(driver==null) {
 				String browserName=config.getProperty("browser");
@@ -164,8 +170,8 @@ public class TestBase {
 		readNwrite.runmodeCheck(data);
 
 	}
-	
-	
+
+
 
 	@BeforeMethod
 	public void setUp(Method m) {
@@ -207,27 +213,27 @@ public class TestBase {
 			}
 		}
 	}
-	
+
 	public boolean isElementPresent(String locator, String locatorType) {
 		List<WebElement> allElements=null;
 		if(locatorType.equalsIgnoreCase("xpath"))
 			allElements=driver.findElements(By.xpath(locator));
 		else if(locatorType.equalsIgnoreCase("cssSelector"))
 			allElements=driver.findElements(By.cssSelector(locator));
-			else if(locatorType.equalsIgnoreCase("id"))
-				allElements=driver.findElements(By.id(locator));
-				if(allElements.size()==0)
-					return false;
-				else
-					return true;
-				
+		else if(locatorType.equalsIgnoreCase("id"))
+			allElements=driver.findElements(By.id(locator));
+		if(allElements.size()==0)
+			return false;
+		else
+			return true;
+
 	}
-	
+
 	public void selectDropdownElement(WebElement element,String elementName) {
 		Select s=new Select(element);
 		s.selectByVisibleText(elementName);
 	}
-	
+
 	public void navigateTo(String url) {
 		driver.navigate().to(url);
 	}
@@ -242,8 +248,8 @@ public class TestBase {
 	}
 
 	//********************************Data Provider*****************************************//
-	
-	
+
+
 	@DataProvider
 	public Object[][] dataProvider(Method m) throws FilloException, JsonIOException, JsonSyntaxException, FileNotFoundException{
 		Object[][] dataSet=null;
@@ -254,11 +260,11 @@ public class TestBase {
 			System.out.println("data provider is json");
 		{dataSet= jsonReader.jsonTestDataSet(m);
 		}
-		
+
 		return dataSet;
 
 	}
-	
-	
+
+
 
 }

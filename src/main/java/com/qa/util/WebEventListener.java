@@ -199,12 +199,13 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
         //test.get().fail(result.getThrowable());
+		TestUtil.takeScreenshot();
         String exceptionMessage = result.getThrowable().getClass().toString();
         test.get()
 		.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
 				+ "Exception Occured:Click to see </summary>" + "</font>" + "</b >"
-				+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/failed_screen"
-				+ " target=\"_blank\"><img src =\"screenshots/failed_screen"
+				+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =Screenshots/failed_screen.png"
+				+ " target=\"_blank\"><img src =\"Screenshots/failed_screen.png"
 				+ "\" height=\"42\" width \"42\"/></a>" + "</details>");
         test.get().log(Status.INFO, result.getMethod().getMethodName() + " Execution Ended");
         test.get().log(Status.FAIL, "FAILED");
@@ -216,10 +217,9 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	        //test.get().skip(result.getThrowable());
 	        String exceptionMessage = result.getThrowable().getClass().toString();
 	        test.get()
-			.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
+			.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "yellow>"
 					+ "Exception Occured:Click to see </summary>" + "</font>" + "</b >"
-					+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/failed_screen"
-					+ "\" height=\"42\" width \"42\"/></a>" + "</details>");
+					+ exceptionMessage.replaceAll(",", "<br>"));
 	        test.get().log(Status.INFO, result.getMethod().getMethodName() + " Execution Ended");
 	        test.get().log(Status.SKIP, "SKIPPED");
 	}

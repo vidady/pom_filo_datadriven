@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
 
+import junit.framework.Assert;
+
 public class LoginPageTest extends TestBase{
 
 	
@@ -16,7 +18,7 @@ public class LoginPageTest extends TestBase{
 		navigateTo(prop.getProperty("url"));
 		HomePage hp=new HomePage();
 		hp.clickLink("PEOPLE");
-		//hp.nav_to_peoplePage();
+		Assert.fail();
 	}
 	
 

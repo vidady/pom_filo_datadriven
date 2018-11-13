@@ -3,7 +3,7 @@ package com.qa.util;
 public class AppConstants {
 
 	public static final String APPLICATION_URL="https://www.ashurst.com/";
-	public static final String SCREENSHOT_PATH = System.getProperty("user.dir")+"/Screenshots";
+	public static final String SCREENSHOT_PATH = System.getProperty("user.dir")+"/TestReport/Screenshots";
 	public static final String DATASHEET_PATH=System.getProperty("user.dir")+"/Test_Suite_Data.xlsx";
 	public static final String CHROMEDRIVER_EXE=System.getProperty("user.dir")+"/chromedriver.exe";
 	public static final String FIREFOXDRIVER_EXE=System.getProperty("user.dir")+"/geckodriver.exe";
