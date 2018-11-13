@@ -19,6 +19,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	
 	private static ExtentReports extent = ExtentManager.createInstance();
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    public static ThreadLocal<ExtentTest> classLevelReport = new ThreadLocal<ExtentTest>();
 
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		System.out.println("Before navigating to: '" + url + "'");
@@ -182,7 +183,8 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	@Override
 	public void onTestStart(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " started!"));
-        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),result.getMethod().getDescription());
+        ExtentTest extentTest = classLevelReport.get().createNode(result.getMethod().getMethodName()); 
+        //extent.createTest(result.getMethod().getMethodName(),result.getMethod().getDescription());
         test.set(extentTest);
 	}
 
@@ -196,13 +198,30 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
-        test.get().fail(result.getThrowable());
+        //test.get().fail(result.getThrowable());
+        String exceptionMessage = result.getThrowable().getClass().toString();
+        test.get()
+		.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
+				+ "Exception Occured:Click to see </summary>" + "</font>" + "</b >"
+				+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/failed_screen"
+				+ " target=\"_blank\"><img src =\"screenshots/failed_screen"
+				+ "\" height=\"42\" width \"42\"/></a>" + "</details>");
+        test.get().log(Status.INFO, result.getMethod().getMethodName() + " Execution Ended");
+        test.get().log(Status.FAIL, "FAILED");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		 System.out.println((result.getMethod().getMethodName() + " skipped!"));
-	        test.get().skip(result.getThrowable());
+	        //test.get().skip(result.getThrowable());
+	        String exceptionMessage = result.getThrowable().getClass().toString();
+	        test.get()
+			.debug("<details>" + "<summary>" + "<b>" + "<font color=" + "red>"
+					+ "Exception Occured:Click to see </summary>" + "</font>" + "</b >"
+					+ exceptionMessage.replaceAll(",", "<br>") + "<br><a href =screenshots/failed_screen"
+					+ "\" height=\"42\" width \"42\"/></a>" + "</details>");
+	        test.get().log(Status.INFO, result.getMethod().getMethodName() + " Execution Ended");
+	        test.get().log(Status.SKIP, "SKIPPED");
 	}
 
 	@Override
@@ -213,6 +232,9 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	@Override
 	public void onStart(ITestContext context) {
 		 System.out.println("Extent Reports Version 3 Test Suite started!");
+		 ExtentTest parent = extent.createTest(context.getName().toString());
+		 classLevelReport.set(parent);
+
 			
 		
 	}
