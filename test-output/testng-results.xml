@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-13T17:41:26Z" name="Portal Automation Testing" finished-at="2018-11-13T17:42:36Z" duration-ms="69643">
+  <suite started-at="2018-11-13T17:50:34Z" name="Portal Automation Testing" finished-at="2018-11-13T17:51:45Z" duration-ms="71558">
     <groups>
     </groups>
-    <test started-at="2018-11-13T17:41:26Z" name="LoginPageTest" finished-at="2018-11-13T17:41:44Z" duration-ms="17774">
+    <test started-at="2018-11-13T17:50:34Z" name="LoginPageTest" finished-at="2018-11-13T17:50:50Z" duration-ms="15732">
       <class name="com.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:41:26Z" name="startUp" finished-at="2018-11-13T17:41:28Z" duration-ms="2086" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:50:34Z" name="startUp" finished-at="2018-11-13T17:50:36Z" duration-ms="2219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:41:28Z" name="setUp" finished-at="2018-11-13T17:41:28Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:50:36Z" name="setUp" finished-at="2018-11-13T17:50:36Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest(java.util.Hashtable)[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:41:28Z" name="loginPageTitleTest" data-provider="dataProvider" finished-at="2018-11-13T17:41:44Z" duration-ms="15488" status="PASS">
+        <test-method signature="loginPageTitleTest(java.util.Hashtable)[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:50:36Z" name="loginPageTitleTest" data-provider="dataProvider" finished-at="2018-11-13T17:50:49Z" duration-ms="13267" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,19 +33,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:41:44Z" name="tearDown" finished-at="2018-11-13T17:41:44Z" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:50:49Z" name="tearDown" finished-at="2018-11-13T17:50:50Z" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.LoginPageTest -->
     </test> <!-- LoginPageTest -->
-    <test started-at="2018-11-13T17:41:49Z" name="MyFirstTest" finished-at="2018-11-13T17:42:36Z" duration-ms="46465">
+    <test started-at="2018-11-13T17:50:55Z" name="MyFirstTest" finished-at="2018-11-13T17:51:45Z" duration-ms="50444">
       <class name="com.qa.tests.MyFirstTest">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:41:49Z" name="startUp" finished-at="2018-11-13T17:41:51Z" duration-ms="1511" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:50:55Z" name="startUp" finished-at="2018-11-13T17:50:56Z" duration-ms="1446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:41:51Z" name="setUp" finished-at="2018-11-13T17:41:51Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:50:56Z" name="setUp" finished-at="2018-11-13T17:50:56Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:41:51Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-11-13T17:42:06Z" duration-ms="14723" status="PASS">
+        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:50:56Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-11-13T17:51:14Z" duration-ms="17812" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myFirstTestt -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:42:06Z" name="setUp" finished-at="2018-11-13T17:42:06Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:14Z" name="setUp" finished-at="2018-11-13T17:51:14Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:42:06Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-11-13T17:42:20Z" duration-ms="14668" status="PASS">
+        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:14Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-11-13T17:51:31Z" duration-ms="16638" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myFirstTestt -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:42:20Z" name="setUp" finished-at="2018-11-13T17:42:20Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:31Z" name="setUp" finished-at="2018-11-13T17:51:31Z" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="mySecondTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:42:20Z" name="mySecondTestt" data-provider="dataProvider" finished-at="2018-11-13T17:42:36Z" duration-ms="15345" status="PASS">
+        <test-method signature="mySecondTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:31Z" name="mySecondTestt" data-provider="dataProvider" finished-at="2018-11-13T17:51:45Z" duration-ms="14346" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,7 +111,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mySecondTestt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:42:36Z" name="tearDown" finished-at="2018-11-13T17:42:36Z" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:45Z" name="tearDown" finished-at="2018-11-13T17:51:45Z" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

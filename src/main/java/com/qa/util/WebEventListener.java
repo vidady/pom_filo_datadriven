@@ -188,7 +188,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void onTestStart(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " started!"));
         ExtentTest extentTest = classLevelReport.get().createNode(result.getMethod().getMethodName()); 
-        extentTest.assignCategory("Test_Case_Level_Regression_Suite");
+        extentTest.assignCategory("Test_Case_Level_Run_Result");
         //extent.createTest(result.getMethod().getMethodName(),result.getMethod().getDescription());
         test.set(extentTest);
 	}
@@ -238,7 +238,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void onStart(ITestContext context) {
 		 System.out.println("Extent Reports Version 3 Test Suite started!");
 		 ExtentTest parent = extent.createTest(context.getName().toString());
-		 parent.assignCategory("Epic_Level_Regression_Suite");
+		 parent.assignCategory("Epic_Level_Run_Result");
 		 classLevelReport.set(parent);
 
 			
