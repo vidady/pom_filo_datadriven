@@ -8,10 +8,12 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.PageLoadStrategy;
@@ -26,7 +28,9 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -118,6 +122,7 @@ public class TestBase {
 					options.addArguments("--disable-notifications");
 					options.addArguments("disable-infobars");
 					options.addArguments("--start-maximized");
+					options.addArguments("--headless");
 					options.addArguments("--proxy-server:http://100.0.0.1");
 					//options.addArguments("user-data-dir:directory path of till user data folder");
 					//options.setPageLoadStrategy(PageLoadStrategy.EAGER);
@@ -237,6 +242,68 @@ public class TestBase {
 
 	public void navigateTo(String url) {
 		driver.navigate().to(url);
+	}
+	
+	public Set<String> getWindowsSet() {
+		Set<String> winIds=driver.getWindowHandles();
+		return winIds;
+	}
+	
+	public void switchToWindowById(String id) {
+		Set<String> winSet=getWindowsSet();
+		for (String win:winSet) {
+			if(win.equals(id)) {
+				driver.switchTo().window(id);
+			}
+		}
+	}
+	
+	public void switchToDefaultWindow() {
+		driver.switchTo().defaultContent();
+	}
+	
+	public void acceptBrowserPopUp() {
+		Alert alert=driver.switchTo().alert();
+		alert.accept();
+		driver.switchTo().defaultContent();
+	}
+	
+	public void dismissBrowserPopUp() {
+		Alert alert=driver.switchTo().alert();
+		alert.dismiss();
+		driver.switchTo().defaultContent();
+	}
+	
+	public String getTextBrowserPopUp() {
+		Alert alert=driver.switchTo().alert();
+		String text=alert.getText().toString();
+		driver.switchTo().defaultContent();
+		return text;
+	}
+	
+	public void elementWait(WebElement element,int seconds) {
+		WebDriverWait wait=new WebDriverWait(driver,seconds);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	public void clickTo(WebElement element) {
+		element.click();
+	}
+	
+	public void getAttributeValue(WebElement element,String attribute) {
+		element.getAttribute(attribute);
+	}
+	
+	public void clearCookies() {
+		driver.manage().deleteAllCookies();
+	}
+	
+	public void navigateBack() {
+		driver.navigate().back();
+	}
+	
+	public void navigateForward() {
+		driver.navigate().forward();
 	}
 
 
