@@ -16,7 +16,7 @@
 	</properties>
 
 	<build>
-	
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -39,11 +39,93 @@
 				</configuration>
 
 			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<configuration>
+					<classpathScope>test</classpathScope>
+					<mainClass>com.qa.tests.runner</mainClass>
+				</configuration>
+				<executions>
+					<execution>
+						<id>run-selenium</id>
+						<phase>integration-test</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 
+			<!-- Post-Man plugin -->
+ <plugin>
+ <groupId>ch.fortysix</groupId>
+ <artifactId>maven-postman-plugin</artifactId>
+ <executions>
+ <execution>
+ 
+ <id>send a mail</id>
+ <phase>test</phase>
+ <goals>
+ <goal>send-mail</goal>
+ </goals>
+ <inherited>true</inherited>
+ 
+ <configuration>
+ <!-- From Email address -->
+ <from>search4vivek007@gmail.com</from>
+ 
+ <!--  Email subject -->
+ <subject>Test Automation Report</subject>
+ 
+ <!-- Fail the build if the mail doesnt reach -->
+ <failonerror>true</failonerror>
+ 
+ <!-- host -->
+ <mailhost>smtp.gmail.com</mailhost>
+ <!-- port of the host -->
+ <mailport>465</mailport>
+ <mailssl>true</mailssl>
+ <mailAltConfig>true</mailAltConfig>
+ 
+ <!-- Email Authentication(USername and Password) -->
+ <mailuser>search4vivek007@gmail.com</mailuser>
+ <mailpassword>Warpath!82</mailpassword>
+ 
+ <receivers>
+ <!-- To Email address -->
+ <receiver>vivek.dubey82@hotmail.com</receiver>
+ </receivers>
+ 
+ <fileSets>
+ <fileSet>
+ <!-- Report directory Path -->
+ <directory>Users/vivek/eclipse-workspace/datadriven.core/TestReport/</directory>
+ <includes>
+ <!-- Report file name -->
+ <include>**/*.html</include>
+ </includes>
+ <!-- Use Regular Expressions like **/*.html if you want all the html files to send-->
+ </fileSet>
+ </fileSets> 
+ 
+ </configuration>
+ </execution>
+ </executions>
+ </plugin>
 
 		</plugins>
 	</build>
-
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.15</version>
+			</plugin>
+		</plugins>
+	</reporting>
 	<dependencies>
 
 		<dependency>
@@ -203,10 +285,10 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-     <groupId>com.aventstack</groupId>
-     <artifactId>extentreports</artifactId>
-     <version>3.1.5</version>
-</dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.5</version>
+		</dependency>
 
 	</dependencies>
 

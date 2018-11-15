@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
 
+import junit.framework.Assert;
+
 
 public class MyFirstTest  extends TestBase{
 
@@ -17,6 +19,7 @@ public class MyFirstTest  extends TestBase{
 		navigateTo(prop.getProperty("url"));
 		HomePage hp=new HomePage();
 		hp.nav_to_peoplePage();
+		Assert.fail();
 
 
 

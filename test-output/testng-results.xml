@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-13T17:50:34Z" name="Portal Automation Testing" finished-at="2018-11-13T17:51:45Z" duration-ms="71558">
+  <suite started-at="2018-11-15T16:49:39Z" name="Portal Automation Testing" finished-at="2018-11-15T16:50:13Z" duration-ms="34143">
     <groups>
     </groups>
-    <test started-at="2018-11-13T17:50:34Z" name="LoginPageTest" finished-at="2018-11-13T17:50:50Z" duration-ms="15732">
+    <test started-at="2018-11-15T16:49:39Z" name="LoginPageTest" finished-at="2018-11-15T16:49:41Z" duration-ms="2213">
       <class name="com.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:50:34Z" name="startUp" finished-at="2018-11-13T17:50:36Z" duration-ms="2219" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.LoginPageTest@272ed83b]" started-at="2018-11-15T16:49:39Z" name="startUp" finished-at="2018-11-15T16:49:41Z" duration-ms="2088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:50:36Z" name="setUp" finished-at="2018-11-13T17:50:36Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginPageTest@272ed83b]" started-at="2018-11-15T16:49:41Z" name="setUp" finished-at="2018-11-15T16:49:41Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest(java.util.Hashtable)[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:50:36Z" name="loginPageTitleTest" data-provider="dataProvider" finished-at="2018-11-13T17:50:49Z" duration-ms="13267" status="PASS">
+        <test-method signature="loginPageTitleTest(java.util.Hashtable)[pri:0, instance:com.qa.tests.LoginPageTest@272ed83b]" started-at="2018-11-15T16:49:41Z" name="loginPageTitleTest" data-provider="dataProvider" finished-at="2018-11-15T16:49:41Z" duration-ms="2" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -30,22 +30,58 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode of the test data is set to NO for class: LoginPageTest]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode of the test data is set to NO for class: LoginPageTest
+at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:33)
+at com.qa.base.TestBase.initial_test_tasks(TestBase.java:171)
+at com.qa.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.qa.tests.runner.test_runner(runner.java:74)
+at com.qa.tests.runner.main(runner.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@65b3a85a]" started-at="2018-11-13T17:50:49Z" name="tearDown" finished-at="2018-11-13T17:50:50Z" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@272ed83b]" started-at="2018-11-15T16:49:41Z" name="tearDown" finished-at="2018-11-15T16:49:41Z" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.LoginPageTest -->
     </test> <!-- LoginPageTest -->
-    <test started-at="2018-11-13T17:50:55Z" name="MyFirstTest" finished-at="2018-11-13T17:51:45Z" duration-ms="50444">
+    <test started-at="2018-11-15T16:49:47Z" name="MyFirstTest" finished-at="2018-11-15T16:50:13Z" duration-ms="26583">
       <class name="com.qa.tests.MyFirstTest">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:50:55Z" name="startUp" finished-at="2018-11-13T17:50:56Z" duration-ms="1446" status="PASS">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.MyFirstTest@29d89d5d]" started-at="2018-11-15T16:49:47Z" name="startUp" finished-at="2018-11-15T16:49:48Z" duration-ms="1315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:50:56Z" name="setUp" finished-at="2018-11-13T17:50:56Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@29d89d5d]" started-at="2018-11-15T16:49:48Z" name="setUp" finished-at="2018-11-15T16:49:48Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +92,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:50:56Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-11-13T17:51:14Z" duration-ms="17812" status="PASS">
+        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@29d89d5d]" started-at="2018-11-15T16:49:48Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-11-15T16:50:02Z" duration-ms="13883" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -64,10 +100,43 @@
               </value>
             </param>
           </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:48)
+at junit.framework.Assert.fail(Assert.java:56)
+at com.qa.tests.MyFirstTest.myFirstTestt(MyFirstTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.qa.tests.runner.test_runner(runner.java:74)
+at com.qa.tests.runner.main(runner.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myFirstTestt -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:14Z" name="setUp" finished-at="2018-11-13T17:51:14Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@29d89d5d]" started-at="2018-11-15T16:50:08Z" name="setUp" finished-at="2018-11-15T16:50:08Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,18 +147,54 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:14Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-11-13T17:51:31Z" duration-ms="16638" status="PASS">
+        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@29d89d5d]" started-at="2018-11-15T16:50:08Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-11-15T16:50:08Z" duration-ms="2" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{url=https://www.ashurst.com/, Test_Case=myFirstTestt, testdata=Dubey, runmode=Y}]]>
+                <![CDATA[{url=https://www.ashurst.com/, Test_Case=myFirstTestt, testdata=Dubey, runmode=N}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode of the test data is set to NO for class: MyFirstTest --- Test Case: myFirstTestt]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode of the test data is set to NO for class: MyFirstTest --- Test Case: myFirstTestt
+at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:35)
+at com.qa.base.TestBase.initial_test_tasks(TestBase.java:171)
+at com.qa.tests.MyFirstTest.myFirstTestt(MyFirstTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.qa.tests.runner.test_runner(runner.java:74)
+at com.qa.tests.runner.main(runner.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myFirstTestt -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:31Z" name="setUp" finished-at="2018-11-13T17:51:31Z" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@29d89d5d]" started-at="2018-11-15T16:50:08Z" name="setUp" finished-at="2018-11-15T16:50:08Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,7 +205,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="mySecondTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:31Z" name="mySecondTestt" data-provider="dataProvider" finished-at="2018-11-13T17:51:45Z" duration-ms="14346" status="PASS">
+        <test-method signature="mySecondTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@29d89d5d]" started-at="2018-11-15T16:50:08Z" name="mySecondTestt" data-provider="dataProvider" finished-at="2018-11-15T16:50:13Z" duration-ms="5284" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,7 +216,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mySecondTestt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.MyFirstTest@10993713]" started-at="2018-11-13T17:51:45Z" name="tearDown" finished-at="2018-11-13T17:51:45Z" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.MyFirstTest@29d89d5d]" started-at="2018-11-15T16:50:13Z" name="tearDown" finished-at="2018-11-15T16:50:13Z" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

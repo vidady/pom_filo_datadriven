@@ -1,0 +1,27 @@
+{
+
+"DataSet"	:
+	[
+		
+		
+		{
+		   "Test_Case"       : "myFirstTestt",
+		   "runmode"         : "Y",
+		   "url"             : "https://www.ashurst.com/",
+		   "testdata"        : "Vivek" 
+		},
+		{
+		   "Test_Case"       : "myFirstTestt",
+		   "runmode"         : "N",
+		   "url"             : "https://www.ashurst.com/",
+		   "testdata"        : "Dubey" 
+		},
+		{
+		   "Test_Case"       : "mySecondTestt",
+		   "runmode"         : "Y",
+		   "url"             : "https://www.ashurst.com/",
+		   "testdata"        : "Avinash" 
+		}
+	]
+	
+	}

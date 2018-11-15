@@ -1,0 +1,17 @@
+{
+	
+	"TestClassRunmode":
+	[
+	     {
+	     "TestClass":"LoginPageTest",
+	     "runmode":"N"
+	     },
+	     {
+	     "TestClass":"MyFirstTest",
+	     "runmode":"Y"
+	     }
+	]
+	
+
+
+}
