@@ -1233,3 +1233,15 @@ Session ID: 0ad758da36ed7163203e89ed9139a022
 2018-11-15 23:48:53,567 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
 2018-11-15 23:48:53,569 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (bcc8bb39b1fe9e73ad54e66e478ba248)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
 2018-11-15 23:48:56,275 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (bcc8bb39b1fe9e73ad54e66e478ba248)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-18 19:38:05,620 - MyFirstTest----myFirstTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-18 19:38:16,824 - MyFirstTest----myFirstTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-18 19:38:16,862 - MyFirstTest----myFirstTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-18 19:38:16,899 - MyFirstTest----myFirstTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-18 19:38:16,911 - MyFirstTest----myFirstTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (437103c923bd4edd4f4a604c29ef9c81)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-18 19:38:22,704 - MyFirstTest----myFirstTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (437103c923bd4edd4f4a604c29ef9c81)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-18 19:38:23,288 - MyFirstTest----mySecondTestt -INFO - Before navigating to: 'https://www.ashurst.com/'
+2018-11-18 19:38:29,991 - MyFirstTest----mySecondTestt -INFO - Navigated to:'https://www.ashurst.com/'
+2018-11-18 19:38:29,994 - MyFirstTest----mySecondTestt -INFO - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-18 19:38:30,054 - MyFirstTest----mySecondTestt -INFO - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-11-18 19:38:30,058 - MyFirstTest----mySecondTestt -INFO - Trying to click on: [[ChromeDriver: chrome on MAC (437103c923bd4edd4f4a604c29ef9c81)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-11-18 19:38:30,330 - MyFirstTest----mySecondTestt -INFO - Clicked on: [[ChromeDriver: chrome on MAC (437103c923bd4edd4f4a604c29ef9c81)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]

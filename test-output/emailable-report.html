@@ -9,34 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Portal Automation Testing</th></tr>
-<tr><td><a href="#t0">LoginPageTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">2,231</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">MyFirstTest</a></td><td class="num">1</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">27,510</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num attn">2</th><th class="num attn">1</th><th class="num">29,741</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">LoginPageTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">3,467</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">MyFirstTest</a></td><td class="num">1</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">26,089</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">2</th><th class="num attn">1</th><th class="num">29,556</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Portal Automation Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginPageTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.tests.LoginPageTest</td><td><a href="#m0">loginPageTitleTest</a></td><td rowspan="1">1542305903415</td><td rowspan="1">6</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">MyFirstTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.tests.MyFirstTest</td><td><a href="#m1">myFirstTestt</a></td><td rowspan="1">1542305910109</td><td rowspan="1">12108</td></tr><tr><th colspan="4">MyFirstTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.tests.MyFirstTest</td><td><a href="#m2">myFirstTestt</a></td><td rowspan="1">1542305927632</td><td rowspan="1">2</td></tr><tr><th colspan="4">MyFirstTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.tests.MyFirstTest</td><td><a href="#m3">mySecondTestt</a></td><td rowspan="1">1542305927642</td><td rowspan="1">8634</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Portal Automation Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginPageTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.tests.LoginPageTest</td><td><a href="#m0">loginPageTitleTest</a></td><td rowspan="1">1542550078714</td><td rowspan="1">7</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">MyFirstTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.tests.MyFirstTest</td><td><a href="#m1">myFirstTestt</a></td><td rowspan="1">1542550085614</td><td rowspan="1">17095</td></tr><tr><th colspan="4">MyFirstTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.tests.MyFirstTest</td><td><a href="#m2">myFirstTestt</a></td><td rowspan="1">1542550103281</td><td rowspan="1">2</td></tr><tr><th colspan="4">MyFirstTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.tests.MyFirstTest</td><td><a href="#m3">mySecondTestt</a></td><td rowspan="1">1542550103287</td><td rowspan="1">7045</td></tr></tbody>
 </table>
 <h2>LoginPageTest</h2><h3 id="m0">com.qa.tests.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Test_Case=loginPageTitleTest, runmode=Y}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Runmode of the test data is set to NO for class: LoginPageTest
 	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:33)
-	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:176)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:175)
 	at com.qa.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:15)
 	at com.qa.tests.runner.test_runner(runner.java:74)
 	at com.qa.tests.runner.main(runner.java:81)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>MyFirstTest</h2><h3 id="m1">com.qa.tests.MyFirstTest#myFirstTestt</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{url=https://www.ashurst.com/, Test_Case=myFirstTestt, testdata=Vivek, runmode=Y}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError
 	at junit.framework.Assert.fail(Assert.java:48)
 	at junit.framework.Assert.fail(Assert.java:56)
 	at com.qa.tests.MyFirstTest.myFirstTestt(MyFirstTest.java:22)
 	at com.qa.tests.runner.test_runner(runner.java:74)
 	at com.qa.tests.runner.main(runner.java:81)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.qa.tests.MyFirstTest#myFirstTestt</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{url=https://www.ashurst.com/, Test_Case=myFirstTestt, testdata=Dubey, runmode=N}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Runmode of the test data is set to NO for class: MyFirstTest --- Test Case: myFirstTestt
 	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:35)
-	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:176)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:175)
 	at com.qa.tests.MyFirstTest.myFirstTestt(MyFirstTest.java:18)
 	at com.qa.tests.runner.test_runner(runner.java:74)
 	at com.qa.tests.runner.main(runner.java:81)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.qa.tests.MyFirstTest#mySecondTestt</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{url=https://www.ashurst.com/, Test_Case=mySecondTestt, testdata=Avinash, runmode=Y}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

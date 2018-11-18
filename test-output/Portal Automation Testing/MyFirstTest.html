@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 15 23:48:28 IST 2018</td>
+<td>Started on:</td><td>Sun Nov 18 19:38:04 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27510 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26089 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -82,8 +82,10 @@ function toggleAllBoxes() {
 	at com.qa.tests.MyFirstTest.myFirstTestt(MyFirstTest.java:22)
 	at com.qa.tests.runner.test_runner(runner.java:74)
 	at com.qa.tests.runner.main(runner.java:81)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace203401172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace203401172'><pre>junit.framework.AssertionFailedError
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412614391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412614391'><pre>junit.framework.AssertionFailedError
 	at junit.framework.Assert.fail(Assert.java:48)
 	at junit.framework.Assert.fail(Assert.java:56)
 	at com.qa.tests.MyFirstTest.myFirstTestt(MyFirstTest.java:22)
@@ -92,9 +94,9 @@ function toggleAllBoxes() {
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -111,9 +113,15 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.run(TestNG.java:1017)
 	at com.qa.tests.runner.test_runner(runner.java:74)
 	at com.qa.tests.runner.main(runner.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.base/java.lang.Thread.run(Thread.java:834)
 </pre></div></td>
-<td>12</td>
-<td>com.qa.tests.MyFirstTest@101952da</td></tr>
+<td>17</td>
+<td>com.qa.tests.MyFirstTest@729570a2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -125,8 +133,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.qa.tests.MyFirstTest.mySecondTestt()'><b>mySecondTestt</b><br>Test class: com.qa.tests.MyFirstTest<br>Parameters: {url=https://www.ashurst.com/, Test_Case=mySecondTestt, testdata=Avinash, runmode=Y}</td>
 <td></td>
-<td>8</td>
-<td>com.qa.tests.MyFirstTest@101952da</td></tr>
+<td>7</td>
+<td>com.qa.tests.MyFirstTest@729570a2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -139,23 +147,25 @@ function toggleAllBoxes() {
 <td title='com.qa.tests.MyFirstTest.myFirstTestt()'><b>myFirstTestt</b><br>Test class: com.qa.tests.MyFirstTest<br>Parameters: {url=https://www.ashurst.com/, Test_Case=myFirstTestt, testdata=Dubey, runmode=N}</td>
 <td><div><pre>org.testng.SkipException: Runmode of the test data is set to NO for class: MyFirstTest --- Test Case: myFirstTestt
 	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:35)
-	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:176)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:175)
 	at com.qa.tests.MyFirstTest.myFirstTestt(MyFirstTest.java:18)
 	at com.qa.tests.runner.test_runner(runner.java:74)
 	at com.qa.tests.runner.main(runner.java:81)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace890733699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace890733699'><pre>org.testng.SkipException: Runmode of the test data is set to NO for class: MyFirstTest --- Test Case: myFirstTestt
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1597779082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1597779082'><pre>org.testng.SkipException: Runmode of the test data is set to NO for class: MyFirstTest --- Test Case: myFirstTestt
 	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:35)
-	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:176)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:175)
 	at com.qa.tests.MyFirstTest.myFirstTestt(MyFirstTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -172,9 +182,15 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.run(TestNG.java:1017)
 	at com.qa.tests.runner.test_runner(runner.java:74)
 	at com.qa.tests.runner.main(runner.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.base/java.lang.Thread.run(Thread.java:834)
 </pre></div></td>
 <td>0</td>
-<td>com.qa.tests.MyFirstTest@101952da</td></tr>
+<td>com.qa.tests.MyFirstTest@729570a2</td></tr>
 </table><p>
 </body>
 </html>
