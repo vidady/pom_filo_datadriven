@@ -1,14 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Running Automation Suite">
+<suite name="Running Automation Suite A">
 
 <listeners>
 <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"></listener>
+<listener class-name="com.qa.util.WebEventListener"></listener>
+
 
 </listeners>
 
 <test name="Running Test A">
     <classes>
-        <class name="com.qa.tests.runner" ></class>
+        <class name="com.qa.tests.LoginPageTest" ></class>
     </classes>
 </test>
 

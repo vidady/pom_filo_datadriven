@@ -35,6 +35,8 @@ public class runner extends TestBase {
 		suite.setName("Portal Automation Testing");
 		suite.addListener("com.qa.ExtentReportListener.ExtentReporterNG" );
 		suite.addListener("com.qa.util.WebEventListener" );
+		//suite.setParallel(XmlSuite.ParallelMode.CLASSES);;
+		//suite.setVerbose(2);
 		
 		switch(TestBase.config.getProperty("dataReadConfiguration")) {
 		case "json":

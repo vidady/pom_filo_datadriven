@@ -5,24 +5,12 @@
     <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
     <listener class-name="com.qa.util.WebEventListener"/>
   </listeners>
-  <test thread-count="5" name="LoginPageTest(failed)">
-    <classes>
-      <class name="com.qa.tests.LoginPageTest">
-        <methods>
-          <include name="startUp"/>
-          <include name="loginPageTitleTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.tests.LoginPageTest -->
-    </classes>
-  </test> <!-- LoginPageTest(failed) -->
   <test thread-count="5" name="MyFirstTest(failed)">
     <classes>
       <class name="com.qa.tests.MyFirstTest">
         <methods>
           <include name="startUp"/>
-          <include name="myFirstTestt" invocation-numbers="0 1"/>
+          <include name="myFirstTestt" invocation-numbers="1"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

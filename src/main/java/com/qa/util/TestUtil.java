@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.openqa.selenium.OutputType;
@@ -17,12 +15,14 @@ public class TestUtil extends TestBase{
 	
 	public static long PAGE_LOAD_TIMEOUT=60;
 	public static long IMPLICIT_WAIT=60;
-	public static Workbook book;
-	public static Sheet sheet;
-	public void switchToFrame() {
-		driver.switchTo().frame("mainpanel");
-	}
-	
+	public static final String CHROMEDRIVER_EXE=System.getProperty("user.dir")+"/chromedriver.exe";
+	public static final String FIREFOXDRIVER_EXE=System.getProperty("user.dir")+"/geckodriver.exe";
+	public static final String CHROMEDRIVER_MAC=System.getProperty("user.dir")+"/chromedriver";
+	public static final String FIREFOXDRIVER_MAC=System.getProperty("user.dir")+"/geckodriver";
+	public static final String LOG4J_PROPERTYFILE=System.getProperty("user.dir")+"/src/main/java/com/qa/config/log4j.properties";
+	public static final int X_COORDINATE = 1440;
+	public static final int Y_COORDINATE = 900;
+
 	
 	
 	public static void takeScreenshot(){

@@ -15,6 +15,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -100,10 +102,10 @@ public class TestBase {
 			if(driver==null) {
 				String browserName=config.getProperty("browser");
 				if(browserName.equalsIgnoreCase("chrome")) {
-					System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver",TestUtil.CHROMEDRIVER_EXE);
 					driver=new ChromeDriver();
 				}else if(browserName.equalsIgnoreCase("firefox")){
-					System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/geckodriver.exe");
+					System.setProperty("webdriver.gecko.driver",TestUtil.FIREFOXDRIVER_EXE);
 					driver=new FirefoxDriver();
 				}
 
@@ -116,7 +118,7 @@ public class TestBase {
 			if(driver==null) {
 				String browserName=config.getProperty("browser");
 				if(browserName.equalsIgnoreCase("chrome")) {
-					System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver");
+					System.setProperty("webdriver.chrome.driver",TestUtil.CHROMEDRIVER_MAC);
 					ChromeOptions options=new ChromeOptions();
 					options.addArguments("--disable-notifications");
 					options.addArguments("disable-infobars");
@@ -130,7 +132,7 @@ public class TestBase {
 
 					driver=new ChromeDriver(options);
 				}else if(browserName.equalsIgnoreCase("firefox")){
-					System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/geckodriver");
+					System.setProperty("webdriver.gecko.driver",TestUtil.FIREFOXDRIVER_MAC);
 
 					//FireFox profile options setting:
 					System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "browserLogs");
@@ -158,10 +160,9 @@ public class TestBase {
 			}
 		}
 
-		logger=Logger.getLogger(className);
-		PropertyConfigurator.configure(System.getProperty("user.dir")+"/src/main/java/com/qa/config/log4j.properties");
-		driver.manage().window().fullscreen();
-		//driver.manage().window().setSize(new Dimension(1440,900));
+		
+		//driver.manage().window().fullscreen();
+		driver.manage().window().setSize(new Dimension(TestUtil.X_COORDINATE,TestUtil.Y_COORDINATE));
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
@@ -183,7 +184,7 @@ public class TestBase {
 		TEST=m.getName().toString();
 		className = m.getDeclaringClass().getSimpleName().toString();
 		logger=Logger.getLogger(className+"----"+TEST);
-		PropertyConfigurator.configure(System.getProperty("user.dir")+"/src/main/java/com/qa/config/log4j.properties");
+		PropertyConfigurator.configure(TestUtil.LOG4J_PROPERTYFILE);
 
 	}
 
@@ -192,15 +193,21 @@ public class TestBase {
 		if(driver!=null)
 			driver.quit();
 		driver=null;
+		logger.info("ENDING TESTS FOR CLASS --- "+className);
 	}
 
 	@BeforeClass
 	public void startUp() {
 		className = this.getClass().getSimpleName().toString();
+		logger=Logger.getLogger(className);
+		PropertyConfigurator.configure(TestUtil.LOG4J_PROPERTYFILE);
+	    logger.info("STARTING TESTS FOR CLASS --- "+className);
 		initialization();
 	}
-
+	
+	
 	//********************************* Generic Functions **********************************************//
+
 
 	public String getElementAttribute(WebElement element,String attribute) {
 		return element.getAttribute(attribute);
@@ -305,7 +312,11 @@ public class TestBase {
 		driver.navigate().forward();
 	}
 
-
+    public void moveToElement(WebElement element) {
+    Actions act=new Actions(driver);
+    act.moveToElement(element).build().perform();
+    elementWait(element,10);
+    }
 
 	//******************************** Validity Functions ***************************************//
 
