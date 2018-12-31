@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Creative Test Suite">
+
+
+
+<test name="Creative Testing">
+    <classes>
+        <class name="com.qa.creative_tests.Login" ></class>
+    </classes>
+</test>
+
+</suite>

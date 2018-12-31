@@ -754,3 +754,33 @@ Session ID: 1d4f16a8d36ea0f21fc3da5afae3dd6d
 2018-11-24 21:21:12,110 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - Clicked on: [[ChromeDriver: chrome on MAC (440316034f80bf34dc253818d2757efd)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
 2018-11-24 21:21:12,113 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - mySecondTestt --- Test Passed
 2018-11-24 21:21:12,261 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - ENDING TESTS FOR CLASS --- MyFirstTest
+2018-12-31 21:46:11,817 [com.qa.tests.runner.main()] INFO LoginPageTest - STARTING TESTS FOR CLASS --- LoginPageTest
+2018-12-31 21:46:14,016 [com.qa.tests.runner.main()] INFO LoginPageTest----loginPageTitleTest - STARTING TEST :loginPageTitleTest
+2018-12-31 21:46:14,019 [com.qa.tests.runner.main()] INFO LoginPageTest----loginPageTitleTest - Before navigating to: 'https://www.ashurst.com/'
+2018-12-31 21:46:25,318 [com.qa.tests.runner.main()] INFO LoginPageTest----loginPageTitleTest - Navigated to:'https://www.ashurst.com/'
+2018-12-31 21:46:25,354 [com.qa.tests.runner.main()] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2018-12-31 21:46:25,493 [com.qa.tests.runner.main()] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2018-12-31 21:46:25,840 [com.qa.tests.runner.main()] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[ChromeDriver: chrome on MAC (ccabf548146ceff9e784050af72608d2)] -> tag name: a]
+2018-12-31 21:46:26,007 [com.qa.tests.runner.main()] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[ChromeDriver: chrome on MAC (ccabf548146ceff9e784050af72608d2)] -> tag name: a]
+2018-12-31 21:46:26,009 [com.qa.tests.runner.main()] INFO LoginPageTest----loginPageTitleTest - loginPageTitleTest --- Test Passed
+2018-12-31 21:46:26,129 [com.qa.tests.runner.main()] INFO LoginPageTest----loginPageTitleTest - ENDING TESTS FOR CLASS --- LoginPageTest
+2018-12-31 21:46:31,541 [com.qa.tests.runner.main()] INFO MyFirstTest - STARTING TESTS FOR CLASS --- MyFirstTest
+2018-12-31 21:46:32,993 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - STARTING TEST :myFirstTestt
+2018-12-31 21:46:32,995 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - Before navigating to: 'https://www.ashurst.com/'
+2018-12-31 21:46:44,542 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - Navigated to:'https://www.ashurst.com/'
+2018-12-31 21:46:44,544 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-12-31 21:46:44,581 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-12-31 21:46:44,582 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - Trying to click on: [[ChromeDriver: chrome on MAC (af31cb42e4117fdae36c8d1546d71f78)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-12-31 21:46:44,727 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - Clicked on: [[ChromeDriver: chrome on MAC (af31cb42e4117fdae36c8d1546d71f78)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-12-31 21:46:44,730 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - myFirstTestt --- Test Passed
+2018-12-31 21:46:44,740 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - STARTING TEST :myFirstTestt
+2018-12-31 21:46:44,746 [com.qa.tests.runner.main()] INFO MyFirstTest----myFirstTestt - myFirstTestt --- Test Skipped
+2018-12-31 21:46:44,758 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - STARTING TEST :mySecondTestt
+2018-12-31 21:46:44,760 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - Before navigating to: 'https://www.ashurst.com/'
+2018-12-31 21:46:55,497 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - Navigated to:'https://www.ashurst.com/'
+2018-12-31 21:46:55,506 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-12-31 21:46:55,539 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2018-12-31 21:46:55,542 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - Trying to click on: [[ChromeDriver: chrome on MAC (af31cb42e4117fdae36c8d1546d71f78)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-12-31 21:46:55,799 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - Clicked on: [[ChromeDriver: chrome on MAC (af31cb42e4117fdae36c8d1546d71f78)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2018-12-31 21:46:55,801 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - mySecondTestt --- Test Passed
+2018-12-31 21:46:55,917 [com.qa.tests.runner.main()] INFO MyFirstTest----mySecondTestt - ENDING TESTS FOR CLASS --- MyFirstTest
