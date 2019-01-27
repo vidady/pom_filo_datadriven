@@ -1,163 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="0" skipped="1">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-12-31T16:16:11Z" name="Portal Automation Testing" finished-at="2018-12-31T16:16:55Z" duration-ms="44196">
+  <suite started-at="2019-01-27T14:35:51Z" name="Creative Test Suite" finished-at="2019-01-27T14:36:03Z" duration-ms="12074">
     <groups>
     </groups>
-    <test started-at="2018-12-31T16:16:11Z" name="LoginPageTest" finished-at="2018-12-31T16:16:26Z" duration-ms="14409">
-      <class name="com.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.LoginPageTest@7766cade]" started-at="2018-12-31T16:16:11Z" name="startUp" finished-at="2018-12-31T16:16:13Z" duration-ms="2252" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginPageTest@7766cade]" started-at="2018-12-31T16:16:14Z" name="setUp" finished-at="2018-12-31T16:16:14Z" duration-ms="3" status="PASS">
+    <test started-at="2019-01-27T14:35:51Z" name="Creative Testing" finished-at="2019-01-27T14:36:03Z" duration-ms="12074">
+      <class name="com.qa.creative_tests.Login">
+        <test-method is-config="true" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:35:51Z" name="initDriver" finished-at="2019-01-27T14:35:53Z" duration-ms="2069" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.qa.tests.LoginPageTest.loginPageTitleTest(java.util.Hashtable)]]>
+                <![CDATA[[Ljava.lang.Object;@20ead579]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest(java.util.Hashtable)[pri:0, instance:com.qa.tests.LoginPageTest@7766cade]" started-at="2018-12-31T16:16:14Z" name="loginPageTitleTest" data-provider="dataProvider" finished-at="2018-12-31T16:16:26Z" duration-ms="11997" status="PASS">
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initReport(java.lang.reflect.Method)[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:35:53Z" name="initReport" finished-at="2019-01-27T14:35:53Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Test_Case=loginPageTitleTest, runmode=Y}]]>
+                <![CDATA[public void com.qa.creative_tests.Login.welcomePage_shouldLookGood(com.qa.base.GalenBase$TestDevice) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LoginPageTest@7766cade]" started-at="2018-12-31T16:16:26Z" name="tearDown" finished-at="2018-12-31T16:16:26Z" duration-ms="119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.tests.LoginPageTest -->
-    </test> <!-- LoginPageTest -->
-    <test started-at="2018-12-31T16:16:31Z" name="MyFirstTest" finished-at="2018-12-31T16:16:55Z" duration-ms="24380">
-      <class name="com.qa.tests.MyFirstTest">
-        <test-method is-config="true" signature="startUp()[pri:0, instance:com.qa.tests.MyFirstTest@4339a36]" started-at="2018-12-31T16:16:31Z" name="startUp" finished-at="2018-12-31T16:16:32Z" duration-ms="1450" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@4339a36]" started-at="2018-12-31T16:16:32Z" name="setUp" finished-at="2018-12-31T16:16:32Z" duration-ms="2" status="PASS">
+        </test-method> <!-- initReport -->
+        <test-method signature="welcomePage_shouldLookGood(com.qa.base.GalenBase$TestDevice)[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:35:53Z" name="welcomePage_shouldLookGood" data-provider="devices" finished-at="2019-01-27T14:35:56Z" duration-ms="2836" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.qa.tests.MyFirstTest.myFirstTestt(java.util.Hashtable)]]>
+                <![CDATA[mobile 450x800]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@4339a36]" started-at="2018-12-31T16:16:32Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-12-31T16:16:44Z" duration-ms="11738" status="PASS">
+        </test-method> <!-- welcomePage_shouldLookGood -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:35:56Z" name="quitDriver" finished-at="2019-01-27T14:35:56Z" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:35:56Z" name="initDriver" finished-at="2019-01-27T14:35:58Z" duration-ms="1367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{url=https://www.ashurst.com/, Test_Case=myFirstTestt, testdata=Vivek, runmode=Y}]]>
+                <![CDATA[[Ljava.lang.Object;@4b1ec694]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myFirstTestt -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@4339a36]" started-at="2018-12-31T16:16:44Z" name="setUp" finished-at="2018-12-31T16:16:44Z" duration-ms="7" status="PASS">
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initReport(java.lang.reflect.Method)[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:35:58Z" name="initReport" finished-at="2019-01-27T14:35:58Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.qa.tests.MyFirstTest.myFirstTestt(java.util.Hashtable)]]>
+                <![CDATA[public void com.qa.creative_tests.Login.welcomePage_shouldLookGood(com.qa.base.GalenBase$TestDevice) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="myFirstTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@4339a36]" started-at="2018-12-31T16:16:44Z" name="myFirstTestt" data-provider="dataProvider" finished-at="2018-12-31T16:16:44Z" duration-ms="7" status="SKIP">
+        </test-method> <!-- initReport -->
+        <test-method signature="welcomePage_shouldLookGood(com.qa.base.GalenBase$TestDevice)[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:35:58Z" name="welcomePage_shouldLookGood" data-provider="devices" finished-at="2019-01-27T14:36:00Z" duration-ms="1997" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{url=https://www.ashurst.com/, Test_Case=myFirstTestt, testdata=Dubey, runmode=N}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Runmode of the test data is set to NO for class: MyFirstTest --- Test Case: myFirstTestt]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Runmode of the test data is set to NO for class: MyFirstTest --- Test Case: myFirstTestt
-at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:35)
-at com.qa.base.TestBase.initial_test_tasks(TestBase.java:176)
-at com.qa.tests.MyFirstTest.myFirstTestt(MyFirstTest.java:16)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at com.qa.tests.runner.test_runner(runner.java:76)
-at com.qa.tests.runner.main(runner.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myFirstTestt -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.MyFirstTest@4339a36]" started-at="2018-12-31T16:16:44Z" name="setUp" finished-at="2018-12-31T16:16:44Z" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qa.tests.MyFirstTest.mySecondTestt(java.util.Hashtable)]]>
+                <![CDATA[tablet 750x800]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="mySecondTestt(java.util.Hashtable)[pri:0, instance:com.qa.tests.MyFirstTest@4339a36]" started-at="2018-12-31T16:16:44Z" name="mySecondTestt" data-provider="dataProvider" finished-at="2018-12-31T16:16:55Z" duration-ms="11043" status="PASS">
+        </test-method> <!-- welcomePage_shouldLookGood -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:36:00Z" name="quitDriver" finished-at="2019-01-27T14:36:00Z" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:36:00Z" name="initDriver" finished-at="2019-01-27T14:36:01Z" duration-ms="1387" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{url=https://www.ashurst.com/, Test_Case=mySecondTestt, testdata=Avinash, runmode=Y}]]>
+                <![CDATA[[Ljava.lang.Object;@3d299393]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mySecondTestt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.MyFirstTest@4339a36]" started-at="2018-12-31T16:16:55Z" name="tearDown" finished-at="2018-12-31T16:16:55Z" duration-ms="116" status="PASS">
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initReport(java.lang.reflect.Method)[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:36:01Z" name="initReport" finished-at="2019-01-27T14:36:01Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.creative_tests.Login.welcomePage_shouldLookGood(com.qa.base.GalenBase$TestDevice) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.tests.MyFirstTest -->
-    </test> <!-- MyFirstTest -->
-  </suite> <!-- Portal Automation Testing -->
+        </test-method> <!-- initReport -->
+        <test-method signature="welcomePage_shouldLookGood(com.qa.base.GalenBase$TestDevice)[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:36:01Z" name="welcomePage_shouldLookGood" data-provider="devices" finished-at="2019-01-27T14:36:03Z" duration-ms="2083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[desktop 1024x800]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- welcomePage_shouldLookGood -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.qa.creative_tests.Login@70e9c95d]" started-at="2019-01-27T14:36:03Z" name="quitDriver" finished-at="2019-01-27T14:36:03Z" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.qa.creative_tests.Login -->
+    </test> <!-- Creative Testing -->
+  </suite> <!-- Creative Test Suite -->
 </testng-results>

@@ -24,8 +24,7 @@ public class Login extends GalenBase {
         StackTraceElement e = stacktrace[1];//coz 0th will be getStackTrace so 1st
         String methodName = e.getMethodName();
         System.out.println(methodName);
-
-        reporting(Galen.checkLayout(getDriver(), "/Users/vivek/Documents/Galen-Selenium/First-Repository/resources/specs/loginPage.gspec",device.getTags()),methodName,device.toString());
+        reporting(Galen.checkLayout(getDriver(), System.getProperty("user.dir")+"/src/main/resources/specs/loginPage.gspec",device.getTags()),methodName,device.toString());
 
         }
 
