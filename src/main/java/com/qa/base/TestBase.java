@@ -1,12 +1,22 @@
 package com.qa.base;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.Locale;
 import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -164,6 +174,7 @@ public class TestBase {
 		//driver.manage().window().fullscreen();
 		driver.manage().window().setSize(new Dimension(TestUtil.X_COORDINATE,TestUtil.Y_COORDINATE));
 		driver.manage().deleteAllCookies();
+		driver.navigate().refresh();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
@@ -361,6 +372,48 @@ public class TestBase {
 		return dataSet;
 
 	}
+	
+	   //File upload by Robot Class
+    public void uploadFileWithRobot (String imagePath) {
+        StringSelection stringSelection = new StringSelection(imagePath);
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(stringSelection, null);
+ 
+        Robot robot = null;
+ 
+        try {
+            robot = new Robot();
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
+ 
+        robot.delay(250);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.delay(150);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+    }
+    
+    //To change the date field to add in some days
+    public void dateChange(String MMM_D_YYYY,int number_of_days_to_add) throws Exception {
+		String sourceDate = MMM_D_YYYY;
+		SimpleDateFormat format = new SimpleDateFormat("MMM d, yyyy", Locale.ENGLISH);
+		Date myDate = format.parse(sourceDate);
+		myDate = addDays(myDate, number_of_days_to_add);
+		System.out.println(format.format(myDate));
+	}
+	 public Date addDays(Date date, int days)
+	    {
+	        Calendar cal = Calendar.getInstance();
+	        cal.setTime(date);
+	        cal.add(Calendar.DATE, days); //minus number would decrement the days
+	        return cal.getTime();
+	    }
 
 
 

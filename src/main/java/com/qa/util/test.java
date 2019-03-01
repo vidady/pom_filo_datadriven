@@ -1,11 +1,19 @@
 package com.qa.util;
 
 import java.lang.reflect.Method;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.Locale;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -18,10 +26,20 @@ import com.qa.base.TestBase;
 public class test extends TestBase{
 	public static Workbook book;
 	public static Sheet sheet;
-	@Test(dataProvider="Provider")
-	public void testing(Hashtable<String,String>data) {
-		System.out.println(data.get("data3"));
-	}
+	@Test
+	public void testing()  {
+		
+		int numb=123454321;
+		int temp=numb;
+		int sum=0;
+		while(temp>0) {
+			int n=temp%10;
+			sum=(sum*10)+n;
+			
+		}
+		System.out.println(sum);
+		
+	    }
 
 	@DataProvider
 	public Object[][] dataSet(Method m) throws FilloException {

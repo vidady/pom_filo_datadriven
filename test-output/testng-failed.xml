@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Portal Automation Testing]">
-  <listeners>
-    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
-    <listener class-name="com.qa.util.WebEventListener"/>
-  </listeners>
-  <test thread-count="5" name="MyFirstTest(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.MyFirstTest">
+      <class name="com.qa.util.test">
         <methods>
           <include name="startUp"/>
-          <include name="myFirstTestt" invocation-numbers="1"/>
+          <include name="testing"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.tests.MyFirstTest -->
+      </class> <!-- com.qa.util.test -->
     </classes>
-  </test> <!-- MyFirstTest(failed) -->
-</suite> <!-- Failed suite [Portal Automation Testing] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
