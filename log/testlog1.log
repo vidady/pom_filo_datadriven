@@ -795,3 +795,43 @@ Session ID: 1d4f16a8d36ea0f21fc3da5afae3dd6d
 2019-02-24 19:43:15,807 [main] INFO test - STARTING TESTS FOR CLASS --- test
 2019-02-24 19:43:20,931 [main] INFO test----testing - ENDING TESTS FOR CLASS --- test
 2019-02-27 20:44:02,288 [main] INFO test - STARTING TESTS FOR CLASS --- test
+2019-03-01 19:18:57,035 [main] INFO LoginPageTest - STARTING TESTS FOR CLASS --- LoginPageTest
+2019-03-01 19:19:00,540 [main] INFO LoginPageTest----loginPageTitleTest - STARTING TEST :loginPageTitleTest
+2019-03-01 19:19:00,543 [main] INFO LoginPageTest----loginPageTitleTest - Before navigating to: 'https://www.ashurst.com/'
+2019-03-01 19:19:15,043 [main] INFO LoginPageTest----loginPageTitleTest - Navigated to:'https://www.ashurst.com/'
+2019-03-01 19:19:15,098 [main] INFO LoginPageTest----loginPageTitleTest - Trying to find Element By : By.tagName: a
+2019-03-01 19:19:15,317 [main] INFO LoginPageTest----loginPageTitleTest - Found Element By : By.tagName: a
+2019-03-01 19:19:15,771 [main] INFO LoginPageTest----loginPageTitleTest - Trying to click on: [[ChromeDriver: chrome on MAC (a633f79d0351d8c9aac56d7c1bf1488d)] -> tag name: a]
+2019-03-01 19:19:15,959 [main] INFO LoginPageTest----loginPageTitleTest - Clicked on: [[ChromeDriver: chrome on MAC (a633f79d0351d8c9aac56d7c1bf1488d)] -> tag name: a]
+2019-03-01 19:19:15,966 [main] INFO LoginPageTest----loginPageTitleTest - loginPageTitleTest --- Test Passed
+2019-03-01 19:19:16,085 [main] INFO LoginPageTest----loginPageTitleTest - ENDING TESTS FOR CLASS --- LoginPageTest
+2019-03-01 19:19:21,625 [main] INFO MyFirstTest - STARTING TESTS FOR CLASS --- MyFirstTest
+2019-03-01 19:19:23,046 [main] INFO MyFirstTest----myFirstTestt - STARTING TEST :myFirstTestt
+2019-03-01 19:19:23,051 [main] INFO MyFirstTest----myFirstTestt - Before navigating to: 'https://www.ashurst.com/'
+2019-03-01 19:19:34,990 [main] INFO MyFirstTest----myFirstTestt - Navigated to:'https://www.ashurst.com/'
+2019-03-01 19:19:34,991 [main] INFO MyFirstTest----myFirstTestt - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2019-03-01 19:19:35,025 [main] INFO MyFirstTest----myFirstTestt - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2019-03-01 19:19:35,026 [main] INFO MyFirstTest----myFirstTestt - Trying to click on: [[ChromeDriver: chrome on MAC (03f051edc36ea4a56543e18e5b974ec0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2019-03-01 19:19:35,161 [main] INFO MyFirstTest----myFirstTestt - Clicked on: [[ChromeDriver: chrome on MAC (03f051edc36ea4a56543e18e5b974ec0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2019-03-01 19:19:35,168 [main] INFO MyFirstTest----myFirstTestt - myFirstTestt --- Test Passed
+2019-03-01 19:19:35,175 [main] INFO MyFirstTest----myFirstTestt - STARTING TEST :myFirstTestt
+2019-03-01 19:19:35,201 [main] INFO MyFirstTest----myFirstTestt - myFirstTestt --- Test Skipped
+2019-03-01 19:19:35,215 [main] INFO MyFirstTest----mySecondTestt - STARTING TEST :mySecondTestt
+2019-03-01 19:19:35,216 [main] INFO MyFirstTest----mySecondTestt - Before navigating to: 'https://www.ashurst.com/'
+2019-03-01 19:19:45,863 [main] INFO MyFirstTest----mySecondTestt - Navigated to:'https://www.ashurst.com/'
+2019-03-01 19:19:45,865 [main] INFO MyFirstTest----mySecondTestt - Trying to find Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2019-03-01 19:19:45,885 [main] INFO MyFirstTest----mySecondTestt - Found Element By : By.xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a
+2019-03-01 19:19:45,887 [main] INFO MyFirstTest----mySecondTestt - Trying to click on: [[ChromeDriver: chrome on MAC (03f051edc36ea4a56543e18e5b974ec0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2019-03-01 19:19:46,165 [main] INFO MyFirstTest----mySecondTestt - Clicked on: [[ChromeDriver: chrome on MAC (03f051edc36ea4a56543e18e5b974ec0)] -> xpath: html/body/header/section[3]/div/nav[1]/ul/li[2]/a]
+2019-03-01 19:19:46,169 [main] INFO MyFirstTest----mySecondTestt - mySecondTestt --- Test Passed
+2019-03-01 19:19:46,279 [main] INFO MyFirstTest----mySecondTestt - ENDING TESTS FOR CLASS --- MyFirstTest
+2019-03-01 19:20:25,524 [TestNG-test=Running Test A-1] INFO LoginPageTest - STARTING TESTS FOR CLASS --- LoginPageTest
+2019-03-01 19:20:27,780 [TestNG-test=Running Test A-1] INFO LoginPageTest----loginPageTitleTest - loginPageTitleTest --- Test Failed
+2019-03-01 19:20:28,111 [TestNG-test=Running Test A-1] INFO LoginPageTest----loginPageTitleTest - loginPageTitleTest --- Test Failed
+2019-03-01 19:20:28,467 [TestNG-test=Running Test A-1] INFO LoginPageTest----loginPageTitleTest - ENDING TESTS FOR CLASS --- LoginPageTest
+2019-03-01 19:20:33,876 [TestNG-test=Running Test B-1] INFO MyFirstTest - STARTING TESTS FOR CLASS --- MyFirstTest
+2019-03-01 19:20:35,364 [TestNG-test=Running Test B-1] INFO MyFirstTest----mySecondTestt - myFirstTestt --- Test Failed
+2019-03-01 19:20:35,365 [TestNG-test=Running Test B-2] INFO MyFirstTest----mySecondTestt - mySecondTestt --- Test Failed
+2019-03-01 19:20:35,664 [TestNG-test=Running Test B-1] INFO MyFirstTest----mySecondTestt - myFirstTestt --- Test Failed
+2019-03-01 19:20:35,915 [TestNG-test=Running Test B-2] INFO MyFirstTest----mySecondTestt - mySecondTestt --- Test Failed
+2019-03-01 19:20:36,498 [TestNG-test=Running Test B-2] INFO MyFirstTest----mySecondTestt - ENDING TESTS FOR CLASS --- MyFirstTest

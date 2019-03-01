@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Running Automation Suite A">
+<suite name="Running Automation Suite A" parallel="true">
 
 <listeners>
 <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"></listener>
@@ -11,6 +11,11 @@
 <test name="Running Test A">
     <classes>
         <class name="com.qa.tests.LoginPageTest" ></class>
+    </classes>
+</test>
+<test name="Running Test B">
+    <classes>
+        <class name="com.qa.tests.MyFirstTest" ></class>
     </classes>
 </test>
 
