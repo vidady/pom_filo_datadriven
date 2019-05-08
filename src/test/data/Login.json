@@ -1,0 +1,10 @@
+{
+	"DataSet": [
+		{
+			"Test_Case": "verify_login",
+			"runmode": "Y",
+			"username": "adminidp@abc.com",
+			"password": "Welcome12345"
+		}
+	]
+}

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LoginPageTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 31 21:46:11 IST 2018</td>
+<td>Started on:</td><td>Fri May 03 16:40:58 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14409 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (119 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,9 +76,44 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qa.tests.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.qa.tests.LoginPageTest<br>Parameters: {Test_Case=loginPageTitleTest, runmode=Y}</td>
-<td></td>
-<td>11</td>
-<td>com.qa.tests.LoginPageTest@7766cade</td></tr>
+<td><div><pre>org.testng.SkipException: Runmode of the test data is set to NO for class: LoginPageTest
+	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:82)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:178)
+	at com.qa.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:15)
+	at com.qa.tests.runner.test_runner(runner.java:76)
+	at com.qa.tests.runner.main(runner.java:83)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace207988207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace207988207'><pre>org.testng.SkipException: Runmode of the test data is set to NO for class: LoginPageTest
+	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:82)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:178)
+	at com.qa.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at com.qa.tests.runner.test_runner(runner.java:76)
+	at com.qa.tests.runner.main(runner.java:83)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginPageTest@48aca48b</td></tr>
 </table><p>
 </body>
 </html>

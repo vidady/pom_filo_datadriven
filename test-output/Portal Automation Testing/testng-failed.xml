@@ -5,16 +5,18 @@
     <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
     <listener class-name="com.qa.util.WebEventListener"/>
   </listeners>
-  <test thread-count="5" name="MyFirstTest(failed)">
+  <test name="R03(failed)">
     <classes>
-      <class name="com.qa.tests.MyFirstTest">
+      <class name="com.qa.tests.R03">
         <methods>
+          <include name="shudown"/>
           <include name="startUp"/>
-          <include name="myFirstTestt" invocation-numbers="1"/>
+          <include name="TC_375423_375424" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="start"/>
         </methods>
-      </class> <!-- com.qa.tests.MyFirstTest -->
+      </class> <!-- com.qa.tests.R03 -->
     </classes>
-  </test> <!-- MyFirstTest(failed) -->
+  </test> <!-- R03(failed) -->
 </suite> <!-- Failed suite [Portal Automation Testing] -->

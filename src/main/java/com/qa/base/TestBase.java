@@ -34,8 +34,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 
@@ -190,9 +192,7 @@ public class TestBase {
 
 	@AfterClass
 	public void tearDown() {
-		if(driver!=null)
-			driver.quit();
-		driver=null;
+		
 		logger.info("ENDING TESTS FOR CLASS --- "+className);
 	}
 
@@ -202,8 +202,23 @@ public class TestBase {
 		logger=Logger.getLogger(className);
 		PropertyConfigurator.configure(TestUtil.LOG4J_PROPERTYFILE);
 	    logger.info("STARTING TESTS FOR CLASS --- "+className);
-		initialization();
+	    //readNwrite.classRunmodeCheck();
+	  
+	    
+		
 	}
+	@BeforeSuite
+	public void start() {
+		  initialization();
+	}
+	@AfterSuite
+	public void shudown() {
+		if(driver!=null)
+			driver.quit();
+		driver=null;
+	}
+	
+	
 	
 	
 	//********************************* Generic Functions **********************************************//
@@ -354,8 +369,10 @@ public class TestBase {
 			System.out.println("data provider is excel");
 			dataSet= readAndWriteData.dataSet(m);
 		}else if(config.getProperty("dataReadConfiguration").equalsIgnoreCase("json"))
+			
+		{
 			System.out.println("data provider is json");
-		{dataSet= jsonReader.jsonTestDataSet(m);
+			dataSet= jsonReader.jsonTestDataSet(m);
 		}
 
 		return dataSet;

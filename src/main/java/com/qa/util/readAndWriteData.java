@@ -19,7 +19,43 @@ import com.qa.base.TestBase;
 public class readAndWriteData {
 
 
+    public void classRunmodeCheck() {
+    	System.out.println(TestBase.className);
+		String classReadConfiguration=TestBase.config.getProperty("dataReadConfiguration");
+		switch(classReadConfiguration) {
 
+		case "json":
+			System.out.println("runmode check from json...");
+			try {
+				if(!jsonReader.jsonTestClassRunmode(TestBase.className)) {
+					throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className);
+				}
+			} catch (JsonIOException | JsonSyntaxException | FileNotFoundException e) {
+				e.printStackTrace();
+			}
+			break;
+			
+			
+		case "excel":
+			System.out.println("runmode check from excel...");
+			if(!FiloExcelReader.readClassRunnerMode(TestBase.className).equalsIgnoreCase("Y")) {
+				throw new SkipException("Runmode of the test data is set to NO for class: "+TestBase.className);
+			}
+			break;
+			
+		default:
+			System.out.println("data read configuration setting is not properly resolved between json and excel");
+			break;
+		}
+
+    }
+    
+    
+    
+    
+    
+    
+    
 	public void runmodeCheck( Hashtable<String,String> data){
 		System.out.println(TestBase.className);
 		String dataReadConfiguration=TestBase.config.getProperty("dataReadConfiguration");

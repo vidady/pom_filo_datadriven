@@ -60,6 +60,12 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void afterClickOn(WebElement element, WebDriver driver) {
 		logger.info("Clicked on: " + element.toString());
 		test.get().log(Status.INFO, "Clicked on: " + element.toString());
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -230,7 +236,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		ExtentTest parent = extent.createTest(context.getName().toString());
 		parent.assignCategory("Epic_Level_Run_Result");
 		classLevelReport.set(parent);
-
+	   
 
 	}
 
@@ -238,6 +244,18 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void onFinish(ITestContext context) {
 		extent.flush();
 
+	}
+
+	@Override
+	public void beforeGetText(WebElement element, WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterGetText(WebElement element, WebDriver driver, String text) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

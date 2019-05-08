@@ -25,7 +25,7 @@ public class GalenBase extends GalenTestNgTestBase{
     @Override
     public WebDriver createDriver(Object[] args) {
 //        WebDriver driver = new FirefoxDriver();
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         if (args.length > 0) {
             if (args[0] != null && args[0] instanceof TestDevice) {
