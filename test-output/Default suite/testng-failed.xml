@@ -3,14 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.Login">
+      <class name="com.qa.tests.R03">
         <methods>
+          <include name="shudown"/>
+          <include name="TC_374980" invocation-numbers="0"/>
           <include name="startUp"/>
-          <include name="verify_login" invocation-numbers="0"/>
+          <include name="TC_375423_375424" invocation-numbers="0"/>
+          <include name="deleteApplication" invocation-numbers="0"/>
+          <include name="TC_375426" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="start"/>
         </methods>
-      </class> <!-- com.qa.tests.Login -->
+      </class> <!-- com.qa.tests.R03 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

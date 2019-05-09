@@ -12,6 +12,8 @@
           <include name="shudown"/>
           <include name="startUp"/>
           <include name="TC_375423_375424" invocation-numbers="0"/>
+          <include name="deleteApplication" invocation-numbers="0"/>
+          <include name="TC_375426" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="start"/>

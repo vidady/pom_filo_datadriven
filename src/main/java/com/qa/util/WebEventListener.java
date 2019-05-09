@@ -104,12 +104,13 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		logger.info("Trying to find Element By : " + by.toString());
 		test.get().log(Status.INFO, "Trying to find Element By : " + by.toString());
 	}
+	
+	
 
 	public void afterFindBy(By by, WebElement element, WebDriver driver) {
 		logger.info("Found Element By : " + by.toString());
 		test.get().log(Status.INFO, "Found Element By : " + element);
-
-
+	
 	}
 
 	/*

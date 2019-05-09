@@ -34,18 +34,28 @@ public class IDP_LoginPage extends TestBase {
 	@FindBy(xpath="//*[@id=\"submitPassword\"]")
 	WebElement btn_login;
 	
+	@FindBy(xpath="//div[contains(text(),'oneLogin')]")
+	WebElement oneLoinOption;
+	
+	@FindBy(xpath="//div[contains(text(),'Soti DB')]")
+	WebElement sotiDbOption;
 	
 	
 	
 	
 	
 	
-	
-	
-	public IDP_Dashboard login(String username,String password) {
+	public IDP_Dashboard login(String username,String password,String account_type) {
 		btn_Login.click();
 		uname.sendKeys(username);
 		btn_usernameNext.click();
+		if(driver.getCurrentUrl().contains("AccountSelector")) {
+			if(account_type.equalsIgnoreCase("Soti DB"))
+				sotiDbOption.click();
+			else if(account_type.equalsIgnoreCase("oneLogin"))
+				oneLoinOption.click();
+				
+		}
 	    pswd.sendKeys(password);
 	    btn_login.click();
 	    return new IDP_Dashboard();

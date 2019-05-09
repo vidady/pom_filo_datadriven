@@ -25,7 +25,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
+import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -46,6 +46,10 @@ import com.aventstack.extentreports.Status;
 import com.codoid.products.exception.FilloException;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
+import com.qa.pages.IDP_Account;
+import com.qa.pages.IDP_Applications;
+import com.qa.pages.IDP_Directories;
+import com.qa.pages.IDP_Users;
 import com.qa.util.TestUtil;
 import com.qa.util.WebEventListener;
 import com.qa.util.jsonReader;
@@ -64,6 +68,9 @@ public class TestBase {
 	public static String className;
 	public static SoftAssert softAssert;
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+	
+
+	
 	public TestBase() {
 
 		try {
@@ -140,6 +147,7 @@ public class TestBase {
 					System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "browserLogs");
 					FirefoxOptions options=new FirefoxOptions();
 					options.setPageLoadStrategy(PageLoadStrategy.NONE);
+				
 					ProfilesIni prof=new ProfilesIni();
 					FirefoxProfile profile=prof.getProfile("default");
 					profile.setPreference("dom.webnotifictions.enabled", false);
@@ -227,6 +235,8 @@ public class TestBase {
 	public String getElementAttribute(WebElement element,String attribute) {
 		return element.getAttribute(attribute);
 	}
+	
+	
 
 
 	public void clickLink(String linkText) {
@@ -358,6 +368,43 @@ public class TestBase {
 		test.get().log(Status.SKIP, message);
 	}
 
+	
+	//*******************************Application Specific Functions*************************//
+	
+	
+
+	
+	public Object navigateToPage(String page_name) {
+		WebElement hamburgerIcon=driver.findElement(By.xpath("//*[@class='hamburger-inner']"));
+		String str1="//a[contains(text(),'";
+		String str2="')]";
+		Object obj=null;
+		hamburgerIcon.click();
+	
+		switch(page_name) {
+		case "users":
+			driver.findElement(By.xpath(str1+"Users"+str2)).click();
+			obj = new IDP_Users();
+			break;
+			
+		case "applications":
+			driver.findElement(By.xpath(str1+"Applications"+str2)).click();
+			obj = new IDP_Applications();
+			break;
+			
+		case "directories":
+			driver.findElement(By.xpath(str1+"Directories"+str2)).click();
+			obj = new IDP_Directories();
+			break;
+			
+		case "account":
+			driver.findElement(By.xpath(str1+"Account"+str2)).click();
+			obj = new IDP_Account();
+			break;
+			
+		}
+		return obj;
+	}
 
 	//********************************Data Provider*****************************************//
 
