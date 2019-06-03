@@ -82,12 +82,6 @@ public class IDP_Dashboard extends TestBase{
 
 
 
-
-
-
-
-
-
 	public IDP_Applications addApplication(String app_type) {
 
 

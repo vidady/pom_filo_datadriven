@@ -236,6 +236,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void onStart(ITestContext context) {
 		ExtentTest parent = extent.createTest(context.getName().toString());
 		parent.assignCategory("Epic_Level_Run_Result");
+		//classLevelReport.set(parent2);
 		classLevelReport.set(parent);
 	   
 

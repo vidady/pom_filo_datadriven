@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="0" ignored="0" total="5" passed="2">
+<testng-results skipped="5" failed="0" ignored="0" total="7" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Portal Automation Testing" duration-ms="12036" started-at="2019-05-09T09:26:23Z" finished-at="2019-05-09T09:26:35Z">
+  <suite name="Portal Automation Testing" duration-ms="360781" started-at="2019-05-31T07:48:15Z" finished-at="2019-05-31T07:54:16Z">
     <groups>
     </groups>
-    <test name="R03" duration-ms="12036" started-at="2019-05-09T09:26:23Z" finished-at="2019-05-09T09:26:35Z">
+    <test name="R03" duration-ms="360123" started-at="2019-05-31T07:48:15Z" finished-at="2019-05-31T07:54:15Z">
       <class name="com.qa.tests.R03">
-        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.tests.R03@2d710f1a]" name="start" is-config="true" duration-ms="3817" started-at="2019-05-09T14:56:19Z" finished-at="2019-05-09T14:56:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.qa.tests.R03@2d710f1a]" name="startUp" is-config="true" duration-ms="29" started-at="2019-05-09T14:56:23Z" finished-at="2019-05-09T14:56:23Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.qa.tests.R03@2e3967ea]" name="startUp" is-config="true" duration-ms="28" started-at="2019-05-31T13:18:15Z" finished-at="2019-05-31T13:18:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2d710f1a]" name="setUp" is-config="true" duration-ms="40" started-at="2019-05-09T14:56:23Z" finished-at="2019-05-09T14:56:23Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2e3967ea]" name="setUp" is-config="true" duration-ms="77" started-at="2019-05-31T13:18:15Z" finished-at="2019-05-31T13:18:15Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TC_374980(java.util.Hashtable)[pri:1, instance:com.qa.tests.R03@2d710f1a]" name="TC_374980" duration-ms="9414" started-at="2019-05-09T14:56:23Z" data-provider="dataProvider" finished-at="2019-05-09T14:56:33Z">
+        <test-method status="PASS" signature="TC_374980(java.util.Hashtable)[pri:1, instance:com.qa.tests.R03@2e3967ea]" name="TC_374980" duration-ms="9222" started-at="2019-05-31T13:18:15Z" data-provider="dataProvider" finished-at="2019-05-31T13:18:24Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_374980 -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2d710f1a]" name="setUp" is-config="true" duration-ms="38" started-at="2019-05-09T14:56:33Z" finished-at="2019-05-09T14:56:33Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2e3967ea]" name="setUp" is-config="true" duration-ms="88" started-at="2019-05-31T13:18:25Z" finished-at="2019-05-31T13:18:25Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="TC_375423_375424(java.util.Hashtable)[pri:2, instance:com.qa.tests.R03@2d710f1a]" name="TC_375423_375424" duration-ms="21" started-at="2019-05-09T14:56:33Z" data-provider="dataProvider" finished-at="2019-05-09T14:56:33Z">
+        <test-method status="SKIP" signature="TC_375423_375424(java.util.Hashtable)[pri:2, instance:com.qa.tests.R03@2e3967ea]" name="TC_375423_375424" duration-ms="20" started-at="2019-05-31T13:18:25Z" data-provider="dataProvider" finished-at="2019-05-31T13:18:25Z">
           <params>
             <param index="0">
               <value>
@@ -63,8 +59,8 @@
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Runmode of the test data is set to NO for class: R03 --- Test Case: TC_375423_375424
 	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:84)
-	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:187)
-	at com.qa.tests.R03.TC_375423_375424(R03.java:33)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:197)
+	at com.qa.tests.R03.TC_375423_375424(R03.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -95,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_375423_375424 -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2d710f1a]" name="setUp" is-config="true" duration-ms="40" started-at="2019-05-09T14:56:33Z" finished-at="2019-05-09T14:56:33Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2e3967ea]" name="setUp" is-config="true" duration-ms="86" started-at="2019-05-31T13:18:25Z" finished-at="2019-05-31T13:18:25Z">
           <params>
             <param index="0">
               <value>
@@ -106,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="TC_375426(java.util.Hashtable)[pri:3, instance:com.qa.tests.R03@2d710f1a]" name="TC_375426" duration-ms="16" started-at="2019-05-09T14:56:33Z" data-provider="dataProvider" finished-at="2019-05-09T14:56:33Z">
+        <test-method status="SKIP" signature="TC_375426(java.util.Hashtable)[pri:3, instance:com.qa.tests.R03@2e3967ea]" name="TC_375426" duration-ms="27" started-at="2019-05-31T13:18:25Z" data-provider="dataProvider" finished-at="2019-05-31T13:18:25Z">
           <params>
             <param index="0">
               <value>
@@ -121,8 +117,8 @@
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Runmode of the test data is set to NO for class: R03 --- Test Case: TC_375426
 	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:84)
-	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:187)
-	at com.qa.tests.R03.TC_375426(R03.java:40)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:197)
+	at com.qa.tests.R03.TC_375426(R03.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -153,7 +149,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_375426 -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2d710f1a]" name="setUp" is-config="true" duration-ms="40" started-at="2019-05-09T14:56:33Z" finished-at="2019-05-09T14:56:33Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2e3967ea]" name="setUp" is-config="true" duration-ms="84" started-at="2019-05-31T13:18:25Z" finished-at="2019-05-31T13:18:25Z">
           <params>
             <param index="0">
               <value>
@@ -164,7 +160,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="deleteApplication(java.util.Hashtable)[pri:4, instance:com.qa.tests.R03@2d710f1a]" name="deleteApplication" duration-ms="16" started-at="2019-05-09T14:56:33Z" data-provider="dataProvider" finished-at="2019-05-09T14:56:33Z">
+        <test-method status="SKIP" signature="deleteApplication(java.util.Hashtable)[pri:4, instance:com.qa.tests.R03@2e3967ea]" name="deleteApplication" duration-ms="24" started-at="2019-05-31T13:18:25Z" data-provider="dataProvider" finished-at="2019-05-31T13:18:25Z">
           <params>
             <param index="0">
               <value>
@@ -179,8 +175,8 @@
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Runmode of the test data is set to NO for class: R03 --- Test Case: deleteApplication
 	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:84)
-	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:187)
-	at com.qa.tests.R03.deleteApplication(R03.java:48)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:197)
+	at com.qa.tests.R03.deleteApplication(R03.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -211,37 +207,169 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteApplication -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2d710f1a]" name="setUp" is-config="true" duration-ms="44" started-at="2019-05-09T14:56:33Z" finished-at="2019-05-09T14:56:33Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.R03@2e3967ea]" name="setUp" is-config="true" duration-ms="92" started-at="2019-05-31T13:18:25Z" finished-at="2019-05-31T13:18:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.qa.tests.R03.account(java.util.Hashtable)]]>
+                <![CDATA[public void com.qa.tests.R03.createUser(java.util.Hashtable)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="account(java.util.Hashtable)[pri:5, instance:com.qa.tests.R03@2d710f1a]" name="account" duration-ms="2186" started-at="2019-05-09T14:56:33Z" data-provider="dataProvider" finished-at="2019-05-09T14:56:35Z">
+        <test-method status="PASS" signature="createUser(java.util.Hashtable)[pri:5, instance:com.qa.tests.R03@2e3967ea]" name="createUser" duration-ms="350181" started-at="2019-05-31T13:18:25Z" data-provider="dataProvider" finished-at="2019-05-31T13:24:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{url=https://qa2012r2-vr3.inqa.soti.net/login, app_type=MobiControl, instance_name=123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1, validation_message2=MobiControl Instance Name cannot exceed 100 characters, Test_Case=account, validation_message=MobiControl Instance Name is required, account_type=Soti DB, username=vdtenant@yopmail.com, runmode=Y, password=Welcome12345}]]>
+                <![CDATA[{url=https://qa2012r2-vr3.inqa.soti.net/login, app_type=MobiControl, instance_name=123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1, validation_message2=MobiControl Instance Name cannot exceed 100 characters, Test_Case=createUser, validation_message=MobiControl Instance Name is required, account_type=Soti DB, username=vdtenant@yopmail.com, runmode=Y, password=Welcome12345}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- account -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.R03@2d710f1a]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-09T14:56:35Z" finished-at="2019-05-09T14:56:35Z">
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.R03@2e3967ea]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-05-31T13:24:15Z" finished-at="2019-05-31T13:24:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="shudown()[pri:0, instance:com.qa.tests.R03@2d710f1a]" name="shudown" is-config="true" duration-ms="679" started-at="2019-05-09T14:56:35Z" finished-at="2019-05-09T14:56:36Z">
+      </class> <!-- com.qa.tests.R03 -->
+    </test> <!-- R03 -->
+    <test name="Tenant_Tests" duration-ms="321" started-at="2019-05-31T07:54:16Z" finished-at="2019-05-31T07:54:16Z">
+      <class name="com.qa.tests.Tenant_Tests">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.qa.tests.Tenant_Tests@2794eab6]" name="start" is-config="true" duration-ms="4094" started-at="2019-05-31T13:18:11Z" finished-at="2019-05-31T13:18:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.qa.tests.Tenant_Tests@2794eab6]" name="startUp" is-config="true" duration-ms="90" started-at="2019-05-31T13:24:16Z" finished-at="2019-05-31T13:24:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.Tenant_Tests@2794eab6]" name="setUp" is-config="true" duration-ms="82" started-at="2019-05-31T13:24:16Z" finished-at="2019-05-31T13:24:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.Tenant_Tests.TC_374980(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="TC_374980(java.util.Hashtable)[pri:1, instance:com.qa.tests.Tenant_Tests@2794eab6]" name="TC_374980" duration-ms="16" started-at="2019-05-31T13:24:16Z" data-provider="dataProvider" finished-at="2019-05-31T13:24:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{url=http://qa2012r2-kv3.inqa.soti.net/login, app_type=MobiControl, Test_Case=TC_374980, industry_type=, country=, account_type=Soti DB, username=adminidp@abc.com, runmode=Y, password=Welcome12345}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode of the test data is set to NO for class: Tenant_Tests]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode of the test data is set to NO for class: Tenant_Tests
+	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:82)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:197)
+	at com.qa.tests.Tenant_Tests.TC_374980(Tenant_Tests.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at com.qa.tests.runner.test_runner(runner.java:76)
+	at com.qa.tests.runner.main(runner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_374980 -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.Tenant_Tests@2794eab6]" name="setUp" is-config="true" duration-ms="92" started-at="2019-05-31T13:24:16Z" finished-at="2019-05-31T13:24:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.Tenant_Tests.createTenant(java.util.Hashtable)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="createTenant(java.util.Hashtable)[pri:2, instance:com.qa.tests.Tenant_Tests@2794eab6]" name="createTenant" duration-ms="11" started-at="2019-05-31T13:24:16Z" data-provider="dataProvider" finished-at="2019-05-31T13:24:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{url=http://qa2012r2-kv3.inqa.soti.net/login, app_type=, Test_Case=createTenant, industry_type=Information Technology, country=India, account_type=Soti DB, username=adminidp@abc.com, runmode=Y, password=Welcome12345}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode of the test data is set to NO for class: Tenant_Tests]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode of the test data is set to NO for class: Tenant_Tests
+	at com.qa.util.readAndWriteData.runmodeCheck(readAndWriteData.java:82)
+	at com.qa.base.TestBase.initial_test_tasks(TestBase.java:197)
+	at com.qa.tests.Tenant_Tests.createTenant(Tenant_Tests.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at com.qa.tests.runner.test_runner(runner.java:76)
+	at com.qa.tests.runner.main(runner.java:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTenant -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.Tenant_Tests@2794eab6]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-31T13:24:16Z" finished-at="2019-05-31T13:24:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="shudown()[pri:0, instance:com.qa.tests.Tenant_Tests@2794eab6]" name="shudown" is-config="true" duration-ms="769" started-at="2019-05-31T13:24:16Z" finished-at="2019-05-31T13:24:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shudown -->
-      </class> <!-- com.qa.tests.R03 -->
-    </test> <!-- R03 -->
+      </class> <!-- com.qa.tests.Tenant_Tests -->
+    </test> <!-- Tenant_Tests -->
   </suite> <!-- Portal Automation Testing -->
 </testng-results>

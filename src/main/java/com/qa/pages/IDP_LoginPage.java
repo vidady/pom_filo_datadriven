@@ -1,5 +1,6 @@
 package com.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -49,14 +50,25 @@ public class IDP_LoginPage extends TestBase {
 		btn_Login.click();
 		uname.sendKeys(username);
 		btn_usernameNext.click();
-		if(driver.getCurrentUrl().contains("AccountSelector")) {
-			if(account_type.equalsIgnoreCase("Soti DB"))
-				sotiDbOption.click();
-			else if(account_type.equalsIgnoreCase("oneLogin"))
-				oneLoinOption.click();
-				
-		}
+		/*
+		 * if(driver.getCurrentUrl().contains("AccountSelector")) {
+		 * if(account_type.equalsIgnoreCase("Soti DB")) sotiDbOption.click(); else
+		 * if(account_type.equalsIgnoreCase("oneLogin")) oneLoinOption.click();
+		 * 
+		 * }
+		 */
+		//div[(contains(text(),'Identity Administrator'))]
+		
+		
+		
+		
+		
 	    pswd.sendKeys(password);
+	    if(driver.getCurrentUrl().contains("CheckForUserType")) {
+			driver.findElement(By.linkText("Identity Administrator")).click();
+			
+			
+		}
 	    btn_login.click();
 	    return new IDP_Dashboard();
 	    

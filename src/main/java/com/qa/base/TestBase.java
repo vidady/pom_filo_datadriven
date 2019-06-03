@@ -16,16 +16,19 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -49,6 +52,7 @@ import com.google.gson.JsonSyntaxException;
 import com.qa.pages.IDP_Account;
 import com.qa.pages.IDP_Applications;
 import com.qa.pages.IDP_Directories;
+import com.qa.pages.IDP_Tenant;
 import com.qa.pages.IDP_Users;
 import com.qa.util.TestUtil;
 import com.qa.util.WebEventListener;
@@ -68,9 +72,9 @@ public class TestBase {
 	public static String className;
 	public static SoftAssert softAssert;
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
-	
+	JavascriptExecutor js=(JavascriptExecutor)driver; 
 
-	
+
 	public TestBase() {
 
 		try {
@@ -116,6 +120,13 @@ public class TestBase {
 				}else if(browserName.equalsIgnoreCase("firefox")){
 					System.setProperty("webdriver.gecko.driver",TestUtil.FIREFOXDRIVER_EXE);
 					driver=new FirefoxDriver();
+				}else if(browserName.equalsIgnoreCase("headless")){
+					
+					driver = new HtmlUnitDriver();;
+				}else if(browserName.equalsIgnoreCase("ie")) {
+					System.setProperty("webdriver.edge.driver",TestUtil.EDGEDRIVER_EXE); 
+					 
+	                driver = new EdgeDriver();
 				}
 
 				edriver=new EventFiringWebDriver(driver);
@@ -147,7 +158,7 @@ public class TestBase {
 					System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "browserLogs");
 					FirefoxOptions options=new FirefoxOptions();
 					options.setPageLoadStrategy(PageLoadStrategy.NONE);
-				
+
 					ProfilesIni prof=new ProfilesIni();
 					FirefoxProfile profile=prof.getProfile("default");
 					profile.setPreference("dom.webnotifictions.enabled", false);
@@ -170,8 +181,8 @@ public class TestBase {
 			}
 		}
 
-		
-		//driver.manage().window().fullscreen();
+
+		driver.manage().window().maximize();
 		driver.manage().window().setSize(new Dimension(TestUtil.X_COORDINATE,TestUtil.Y_COORDINATE));
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
@@ -200,7 +211,7 @@ public class TestBase {
 
 	@AfterClass
 	public void tearDown() {
-		
+
 		logger.info("ENDING TESTS FOR CLASS --- "+className);
 	}
 
@@ -209,15 +220,15 @@ public class TestBase {
 		className = this.getClass().getSimpleName().toString();
 		logger=Logger.getLogger(className);
 		PropertyConfigurator.configure(TestUtil.LOG4J_PROPERTYFILE);
-	    logger.info("STARTING TESTS FOR CLASS --- "+className);
-	    //readNwrite.classRunmodeCheck();
-	  
-	    
-		
+		logger.info("STARTING TESTS FOR CLASS --- "+className);
+		//readNwrite.classRunmodeCheck();
+
+
+
 	}
 	@BeforeSuite
 	public void start() {
-		  initialization();
+		initialization();
 	}
 	@AfterSuite
 	public void shudown() {
@@ -225,18 +236,18 @@ public class TestBase {
 			driver.quit();
 		driver=null;
 	}
-	
-	
-	
-	
+
+
+
+
 	//********************************* Generic Functions **********************************************//
 
 
 	public String getElementAttribute(WebElement element,String attribute) {
 		return element.getAttribute(attribute);
 	}
-	
-	
+
+
 
 
 	public void clickLink(String linkText) {
@@ -251,7 +262,7 @@ public class TestBase {
 		}
 	}
 
-	public boolean isElementPresent(String locator, String locatorType) {
+	public void isElementPresent(String locator, String locatorType) {
 		List<WebElement> allElements=null;
 		if(locatorType.equalsIgnoreCase("xpath"))
 			allElements=driver.findElements(By.xpath(locator));
@@ -259,10 +270,21 @@ public class TestBase {
 			allElements=driver.findElements(By.cssSelector(locator));
 		else if(locatorType.equalsIgnoreCase("id"))
 			allElements=driver.findElements(By.id(locator));
-		if(allElements.size()==0)
-			return false;
-		else
-			return true;
+		if(allElements.size()==0) {
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", locator);
+			reportPass(locator+" present");}
+		else {
+			reportFail(locator+" not present");}
+
+	}
+
+	public void isElementPresent(WebElement element) {
+		if(element.isDisplayed()) {
+			js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
+			reportPass(element+" present");
+		}
+		else 
+			reportFail(element+" not present");
 
 	}
 
@@ -274,12 +296,12 @@ public class TestBase {
 	public void navigateTo(String url) {
 		driver.navigate().to(url);
 	}
-	
+
 	public Set<String> getWindowsSet() {
 		Set<String> winIds=driver.getWindowHandles();
 		return winIds;
 	}
-	
+
 	public void switchToWindowById(String id) {
 		Set<String> winSet=getWindowsSet();
 		for (String win:winSet) {
@@ -288,60 +310,60 @@ public class TestBase {
 			}
 		}
 	}
-	
+
 	public void switchToDefaultWindow() {
 		driver.switchTo().defaultContent();
 	}
-	
+
 	public void acceptBrowserPopUp() {
 		Alert alert=driver.switchTo().alert();
 		alert.accept();
 		driver.switchTo().defaultContent();
 	}
-	
+
 	public void dismissBrowserPopUp() {
 		Alert alert=driver.switchTo().alert();
 		alert.dismiss();
 		driver.switchTo().defaultContent();
 	}
-	
+
 	public String getTextBrowserPopUp() {
 		Alert alert=driver.switchTo().alert();
 		String text=alert.getText().toString();
 		driver.switchTo().defaultContent();
 		return text;
 	}
-	
+
 	public void elementWait(WebElement element,int seconds) {
 		WebDriverWait wait=new WebDriverWait(driver,seconds);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
-	
+
 	public void clickTo(WebElement element) {
 		element.click();
 	}
-	
+
 	public void getAttributeValue(WebElement element,String attribute) {
 		element.getAttribute(attribute);
 	}
-	
+
 	public void clearCookies() {
 		driver.manage().deleteAllCookies();
 	}
-	
+
 	public void navigateBack() {
 		driver.navigate().back();
 	}
-	
+
 	public void navigateForward() {
 		driver.navigate().forward();
 	}
 
-    public void moveToElement(WebElement element) {
-    Actions act=new Actions(driver);
-    act.moveToElement(element).build().perform();
-    elementWait(element,10);
-    }
+	public void moveToElement(WebElement element) {
+		Actions act=new Actions(driver);
+		act.moveToElement(element).build().perform();
+		elementWait(element,10);
+	}
 
 	//******************************** Validity Functions ***************************************//
 
@@ -349,59 +371,64 @@ public class TestBase {
 		softAssert.assertEquals(element.getText().toString(), expectedText);
 		softAssert.assertAll();
 	}
-	
+
 	//******************************** Reporting Functions ***************************************//
-	
+
 	public void reportPass(String message) {
 		test.get().log(Status.PASS, message);
 	}
-	
+
 	public void reportFail(String message) {
 		test.get().log(Status.FAIL, message);
 	}
-	
+
 	public void reportInfo(String message) {
 		test.get().log(Status.INFO, message);
 	}
-	
+
 	public void reportSkip(String message) {
 		test.get().log(Status.SKIP, message);
 	}
 
-	
-	//*******************************Application Specific Functions*************************//
-	
-	
 
-	
+	//*******************************Application Specific Functions*************************//
+
+
+
+
 	public Object navigateToPage(String page_name) {
 		WebElement hamburgerIcon=driver.findElement(By.xpath("//*[@class='hamburger-inner']"));
 		String str1="//a[contains(text(),'";
 		String str2="')]";
 		Object obj=null;
 		hamburgerIcon.click();
-	
+
 		switch(page_name) {
 		case "users":
 			driver.findElement(By.xpath(str1+"Users"+str2)).click();
 			obj = new IDP_Users();
 			break;
-			
+
 		case "applications":
 			driver.findElement(By.xpath(str1+"Applications"+str2)).click();
 			obj = new IDP_Applications();
 			break;
-			
+
 		case "directories":
 			driver.findElement(By.xpath(str1+"Directories"+str2)).click();
 			obj = new IDP_Directories();
 			break;
-			
+
 		case "account":
 			driver.findElement(By.xpath(str1+"Account"+str2)).click();
 			obj = new IDP_Account();
 			break;
-			
+
+		case "tenant":
+			driver.findElement(By.xpath(str1+"Tenant"+str2)).click();
+			obj = new IDP_Tenant();
+			break;
+
 		}
 		return obj;
 	}
@@ -416,7 +443,7 @@ public class TestBase {
 			System.out.println("data provider is excel");
 			dataSet= readAndWriteData.dataSet(m);
 		}else if(config.getProperty("dataReadConfiguration").equalsIgnoreCase("json"))
-			
+
 		{
 			System.out.println("data provider is json");
 			dataSet= jsonReader.jsonTestDataSet(m);

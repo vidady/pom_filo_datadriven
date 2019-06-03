@@ -22,6 +22,7 @@ public class TestUtil extends TestBase{
 	public static final String LOG4J_PROPERTYFILE=System.getProperty("user.dir")+"/src/main/java/com/qa/config/log4j.properties";
 	public static final int X_COORDINATE = 1440;
 	public static final int Y_COORDINATE = 900;
+	public static final String EDGEDRIVER_EXE = System.getProperty("user.dir")+"/msedgedriver.exe";
 
 	
 	

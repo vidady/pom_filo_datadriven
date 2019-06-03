@@ -21,4 +21,19 @@
       </class> <!-- com.qa.tests.R03 -->
     </classes>
   </test> <!-- R03(failed) -->
+  <test name="Tenant_Tests(failed)">
+    <classes>
+      <class name="com.qa.tests.Tenant_Tests">
+        <methods>
+          <include name="createTenant" invocation-numbers="0"/>
+          <include name="TC_374980" invocation-numbers="0"/>
+          <include name="shudown"/>
+          <include name="startUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.qa.tests.Tenant_Tests -->
+    </classes>
+  </test> <!-- Tenant_Tests(failed) -->
 </suite> <!-- Failed suite [Portal Automation Testing] -->

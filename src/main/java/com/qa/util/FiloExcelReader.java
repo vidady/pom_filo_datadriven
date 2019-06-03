@@ -55,5 +55,33 @@ public class FiloExcelReader {
 		
 	    return list;
 	}
+	
+	
+	public static String getBrowser(String testClassName) {
+		Fillo fillo=new Fillo();
+		Recordset rs;
+		Connection connection;
+		String result = null;
+		try {
+			connection = fillo.getConnection(System.getProperty("user.dir")+"/Test_Suite_Data.xlsx");
+			String query="Select BROWSER from runner where TCID='"+testClassName+"' and Runmode='Y'";
+		    rs=connection.executeQuery(query);
+			
+			while(rs.next()) {
+				result=rs.getField("BROWSER");
+				connection.close();
+				rs.close();
+				
+			}
+			System.out.println(result);
+		} catch (FilloException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return result;
+	}
+	
 
 }
