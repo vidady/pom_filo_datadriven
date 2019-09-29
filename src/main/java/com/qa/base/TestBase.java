@@ -10,6 +10,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -37,6 +39,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -72,6 +76,8 @@ public class TestBase {
 	public static String className;
 	public static SoftAssert softAssert;
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+	public static DesiredCapabilities cap;
+	public static URL url;
 	public TestBase() {
 
 		try {
@@ -100,6 +106,7 @@ public class TestBase {
 	//********************************Browser invoke function*****************************************//
 
 	public static void initialization() {
+		
 		String OS = System.getProperty("os.name").toString().toLowerCase();
 		if(OS.contains("mac"))
 			OS="MAC";
@@ -110,7 +117,7 @@ public class TestBase {
 		switch(OS) {
 		case "WINDOWS":
 			if(driver==null) {
-				String browserName=config.getProperty("browser");
+				String browserName=prop.getProperty("browser");
 				if(browserName.equalsIgnoreCase("chrome")) {
 					System.setProperty("webdriver.chrome.driver",TestUtil.CHROMEDRIVER_EXE);
 					driver=new ChromeDriver();
@@ -126,7 +133,7 @@ public class TestBase {
 			}
 		case "MAC":
 			if(driver==null) {
-				String browserName=config.getProperty("browser");
+				String browserName=prop.getProperty("browser");
 				if(browserName.equalsIgnoreCase("chrome")) {
 					System.setProperty("webdriver.chrome.driver",TestUtil.CHROMEDRIVER_MAC);
 					ChromeOptions options=new ChromeOptions();
@@ -161,6 +168,14 @@ public class TestBase {
 				}else if(browserName.equalsIgnoreCase("safari")) {
 					System.setProperty("webdriver.safari.noinstall", "true");
 					driver = new SafariDriver();
+				}else if(browserName.equalsIgnoreCase("remoteChrome")) {
+					cap=DesiredCapabilities.chrome();
+					try {
+						url=new URL("http://localhost:4444/wd/hub");
+					} catch (MalformedURLException e) {
+						e.printStackTrace();
+					}
+					driver=new RemoteWebDriver(url,cap);
 				}
 
 				edriver=new EventFiringWebDriver(driver);
@@ -364,9 +379,9 @@ public class TestBase {
 		if(config.getProperty("dataReadConfiguration").equalsIgnoreCase("excel")) {
 			System.out.println("data provider is excel");
 			dataSet= readAndWriteData.dataSet(m);
-		}else if(config.getProperty("dataReadConfiguration").equalsIgnoreCase("json"))
+		}else if(config.getProperty("dataReadConfiguration").equalsIgnoreCase("json")) {
 			System.out.println("data provider is json");
-		{dataSet= jsonReader.jsonTestDataSet(m);
+		dataSet= jsonReader.jsonTestDataSet(m);
 		}
 
 		return dataSet;

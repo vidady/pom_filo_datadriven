@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Running Automation Suite A]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Portal Automation Testing]">
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
     <listener class-name="com.qa.util.WebEventListener"/>
   </listeners>
-  <test thread-count="5" name="Running Test B(failed)">
+  <test thread-count="5" name="MyFirstTest(failed)">
     <classes>
       <class name="com.qa.tests.MyFirstTest">
         <methods>
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- com.qa.tests.MyFirstTest -->
     </classes>
-  </test> <!-- Running Test B(failed) -->
-</suite> <!-- Failed suite [Running Automation Suite A] -->
+  </test> <!-- MyFirstTest(failed) -->
+</suite> <!-- Failed suite [Portal Automation Testing] -->

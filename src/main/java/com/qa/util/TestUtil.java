@@ -36,7 +36,7 @@ public class TestUtil extends TestBase{
             if (testDirectory.mkdir()) {
                 System.out.println("Directory: " + path + " is created!" );
             } else {
-                System.out.println("Failed to create directory: " + path);
+            	System.out.println("Failed to create directory: " + path);
             }
         } else {
             System.out.println("Directory already exists: " + path);
